@@ -1,4 +1,4 @@
-# 👨‍💻 SE271, Object Oriented Programming (Fall 2020, DGIST)
+# 👨‍💻 SE271, Object-Oriented Programming (Fall 2020, DGIST)
 
 ### Prof. Yeseong Kim, Assistant Professor of ICE at DGIST
 
