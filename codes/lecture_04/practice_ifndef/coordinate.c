@@ -1,4 +1,4 @@
-#include "coordinate.hg="
+#include "coordinate.h"
 
 void print_coordinate(struct coordinate *coord) {
 	printf("X: %d\n", coord->x);
