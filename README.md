@@ -4,7 +4,7 @@
 
 
 
-This repository contains the contents and codes of Object-Oriented Programming course for the fall semester of 2020. If you wish to use lecture notes and codes, please contact the author.
+This repository contains the contents and codes of Object-Oriented Programming course for the fall semester of 2020. If you wish to use lecture notes and codes, please contact me.
 
 **Contact : hyhan@dgist.ac.kr**
 
