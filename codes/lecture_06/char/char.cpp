@@ -2,7 +2,7 @@
 #include <string.h>
 #include <cstring>
 using namespace std;
-
+//compile error
 int main() {
   char str[20] = "Hello";
   char str2[] = "World";
