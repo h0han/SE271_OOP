@@ -116,8 +116,7 @@ int count_pattern(const char* str, const char* pattern) {
 }
 
 char* create_shortest_palindrome(const char* src, char* dst) {
-    int i = 0; int j;
-    int srclen = 0;
+    int i = 0; int j; int srclen = 0;
 
     while (true) {
         if (src[i] == '\0') {
@@ -127,33 +126,34 @@ char* create_shortest_palindrome(const char* src, char* dst) {
         srclen += 1;
     }
 
-    for (j = srclen -1; j >= 0; j--) {
-        dst[srclen -1 - j] = src[j];
+    char dst2[100] = { 0 }; // reverse src
+
+    for (j = srclen - 1; j >= 0; j--) {
+        dst2[srclen - 1 - j] = src[j];
     }
 
-    char* adst = dst;
-
-    int rmd = 0; // dst의 값 복제 문제 해결 필요
-    for (int k = 0; k < srclen; k++) {
+    int l;
+    for (l = 0; l < srclen; l++) {
         int match = 0;
-        for (rmd; rmd < srclen - rmd; rmd++) {
-            if (src[k + rmd] == dst[rmd]) {
-                match += 1;
+        int m = 0;
+        int clonel = l; // clone l
+        while ((m < srclen - l) && (clonel < srclen)) {
+            if (src[clonel] == dst2[m]) {
+                match++; m++; clonel++;
             }
+            else break;
         }
-        if (match == srclen - rmd) {
-            if (match == srclen) {
-                return dst;
+        if (match == srclen - l) {
+            int n;
+            for (n = 0; n < srclen - match; n++) {
+                dst[n] = src[n];
             }
-            for (int l = 0; l < srclen - rmd; l++) {
-                dst[l] = src[l];
+            for (int k = 0; k < srclen; k++) {
+                dst[n + k] = dst2[k];
             }
-            for (int m = srclen - rmd - 1; srclen - 1; m++) {
-                dst[m] = adst[m - rmd];
-            }
+            return dst;
         }
     }
-    return dst;
 }
 
 #ifdef SE271_HW1
@@ -187,8 +187,13 @@ int main() {
 
     // Problem 5
     char d[100] = { 0 };
-    cout << "Problem 5: ex1) " << create_shortest_palindrome("ABCD", d) << endl;
-    cout << "Problem 5: ex2) " << create_shortest_palindrome("AABBCC", d) << endl;
+    cout << "Problem 5: ex0) " << create_shortest_palindrome("AA", d) << endl;
+    cout << "Problem 5: ex1) " << create_shortest_palindrome("ABA", d) << endl;
+    cout << "Problem 5: ex2) " << create_shortest_palindrome("AAB", d) << endl;
+    cout << "Problem 5: ex3) " << create_shortest_palindrome("AABB", d) << endl; 
+    cout << "Problem 5: ex3) " << create_shortest_palindrome("abcba", d) << endl;
+    cout << "Problem 5: ex4) " << create_shortest_palindrome("AAABBBB", d) << endl;
+    cout << "Problem 5: ex5) " << create_shortest_palindrome("ABCDBBABB", d) << endl;
 
     return 0;
 }
