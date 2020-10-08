@@ -18,5 +18,11 @@
     <ClCompile Include="swap_operation.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="passing_array_to_function.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="function_pointer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
