@@ -23,13 +23,13 @@ void func3(int ary[13]) { // 컴파일러 내부에서 void func3(int* ary)의 형태로 인�
 	cout << typeid(ary).name() << endl; // 4 (integer ptr의 size 반환)
 }
 
-void func4(int(*ary)[13]) {
+void func4(int(*ary)[13]) { // ary의 pointer로 잡아서 넘기는 것이 best
 	cout << "func4" << endl;
 	cout << "ary is" << ary << endl;
-	cout << "*ary is" << *ary << endl;
+	cout << "*ary is" << *ary << endl; // ary == *ary
 	cout << "**ary is " << **ary << endl;
-	cout << "sizeof(ary) is " << sizeof(ary) << endl;
-	cout << "sizeof(*ary) is " << sizeof(*ary) << endl;
+	cout << "sizeof(ary) is " << sizeof(ary) << endl; // 4(integer ptr)
+	cout << "sizeof(*ary) is " << sizeof(*ary) << endl; // 52
 	cout << "typeid(ary) is " << typeid(ary).name() << endl;
 	cout << "typeid(*ary) is " << typeid(*ary).name() << endl;
 }
