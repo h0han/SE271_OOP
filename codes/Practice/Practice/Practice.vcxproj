@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="function_pointer.cpp" />
+    <ClCompile Include="struct_class.cpp" />
     <ClCompile Include="swap_operation.cpp" />
     <ClCompile Include="passing_array_to_function.cpp" />
   </ItemGroup>
