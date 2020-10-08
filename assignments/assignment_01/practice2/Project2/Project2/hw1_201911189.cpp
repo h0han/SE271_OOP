@@ -151,6 +151,7 @@ char* create_shortest_palindrome(const char* src, char* dst) {
             for (int k = 0; k < srclen; k++) {
                 dst[n + k] = dst2[k];
             }
+            dst[2*srclen-match] = '\0';
             return dst;
         }
     }
@@ -179,21 +180,29 @@ int main() {
     // Problem 3
     int c[] = { 1, 5, 3, 2, 4 };
     cout << "Problem 3: " << find_nth(c, sizeof(c) / sizeof(int), 0) << endl;
+    int c1[] = { 1, 5, 3, 2, 4 };
+    cout << "Problem 3: " << find_nth(c1, sizeof(c1) / sizeof(int), 2) << endl;
+    int c2[] = { 1, 5, 3, 2, 4 };
+    cout << "Problem 3: " << find_nth(c2, sizeof(c2) / sizeof(int), 6) << endl;
 
     // Problem 4
-    cout << "Problem 4: ex1) " << count_pattern("AABBBBAA", "AA") << endl;
+    cout << "Problem 4: ex1) " << count_pattern("AAABBBBAAA", "AA") << endl;
     cout << "Problem 4: ex2) " << count_pattern("AABBBBAA", "BB") << endl;
+    cout << "Problem 4: ex3) " << count_pattern("ABABABABA", "AB") << endl;
 
 
     // Problem 5
     char d[100] = { 0 };
+    cout << "Problem 5: ex0) " << create_shortest_palindrome("AB", d) << endl;
     cout << "Problem 5: ex0) " << create_shortest_palindrome("AA", d) << endl;
     cout << "Problem 5: ex1) " << create_shortest_palindrome("ABA", d) << endl;
     cout << "Problem 5: ex2) " << create_shortest_palindrome("AAB", d) << endl;
     cout << "Problem 5: ex3) " << create_shortest_palindrome("AABB", d) << endl; 
     cout << "Problem 5: ex3) " << create_shortest_palindrome("abcba", d) << endl;
-    cout << "Problem 5: ex4) " << create_shortest_palindrome("AAABBBB", d) << endl;
+    cout << "Problem 5: ex4) " << create_shortest_palindrome("AABBDDD", d) << endl;
     cout << "Problem 5: ex5) " << create_shortest_palindrome("ABCDBBABB", d) << endl;
+    cout << "Problem 5: ex5) " << create_shortest_palindrome("CDCDC", d) << endl;
+    cout << "Problem 5: ex5) " << create_shortest_palindrome("ABABABABABAB", d) << endl;
 
     return 0;
 }
