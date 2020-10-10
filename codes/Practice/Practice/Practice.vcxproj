@@ -139,13 +139,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="accessor_issue.cpp" />
     <ClCompile Include="call_by_value_call_by_reference.cpp" />
     <ClCompile Include="dynamic_memory_allocation.cpp" />
+    <ClCompile Include="function_overloading.cpp" />
     <ClCompile Include="function_pointer.cpp" />
     <ClCompile Include="multi_dimensional_array_initialization.cpp" />
     <ClCompile Include="struct_class.cpp" />
     <ClCompile Include="swap_operation.cpp" />
     <ClCompile Include="passing_array_to_function.cpp" />
+    <ClCompile Include="this_pointer.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

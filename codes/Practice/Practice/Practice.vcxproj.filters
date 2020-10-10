@@ -36,5 +36,14 @@
     <ClCompile Include="call_by_value_call_by_reference.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="function_overloading.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="accessor_issue.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="this_pointer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
