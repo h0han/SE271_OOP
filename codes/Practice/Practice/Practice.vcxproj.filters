@@ -30,5 +30,11 @@
     <ClCompile Include="multi_dimensional_array_initialization.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="dynamic_memory_allocation.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="call_by_value_call_by_reference.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

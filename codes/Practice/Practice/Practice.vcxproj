@@ -139,6 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="call_by_value_call_by_reference.cpp" />
+    <ClCompile Include="dynamic_memory_allocation.cpp" />
     <ClCompile Include="function_pointer.cpp" />
     <ClCompile Include="multi_dimensional_array_initialization.cpp" />
     <ClCompile Include="struct_class.cpp" />

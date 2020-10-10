@@ -34,29 +34,29 @@ void func4(int(*ary)[13]) { // ary의 pointer로 잡아서 넘기는 것이 best
 	cout << "typeid(*ary) is " << typeid(*ary).name() << endl;
 }
 
-int main(int argc, char** argv) {
-	int hello[13] = { 'H', 'E', 'L', 'L', 'O' };
-	int(*whatisit)[13] = &hello;
-
-	cout << "sizeof(int) == " << sizeof(int) << endl;
-	cout << "===================" << endl;
-	cout << "main" << endl;
-	cout << hello << endl; // hello의 주소 출력
-	cout << sizeof(hello) << endl; // 4*13
-	cout << *whatisit << endl; // whatisit의 주소 출력
-	cout << **whatisit << endl; // whatisit의 값 출력, 이 경우 hello가 array type이기 때문에 array[0] 출력
-
-	cout << "===================" << endl;
-	func1(hello);
-
-	cout << "===================" << endl;
-	func2(hello);
-
-	cout << "===================" << endl;
-	func3(hello);
-
-	cout << "===================" << endl;
-	func4(&hello); // 인자 전달할 때 array의 주소를 입력
-
-	return 0;
-}
+//int main(int argc, char** argv) {
+//	int hello[13] = { 'H', 'E', 'L', 'L', 'O' };
+//	int(*whatisit)[13] = &hello;
+//
+//	cout << "sizeof(int) == " << sizeof(int) << endl;
+//	cout << "===================" << endl;
+//	cout << "main" << endl;
+//	cout << hello << endl; // hello의 주소 출력
+//	cout << sizeof(hello) << endl; // 4*13
+//	cout << *whatisit << endl; // whatisit의 주소 출력
+//	cout << **whatisit << endl; // whatisit의 값 출력, 이 경우 hello가 array type이기 때문에 array[0] 출력
+//
+//	cout << "===================" << endl;
+//	func1(hello);
+//
+//	cout << "===================" << endl;
+//	func2(hello);
+//
+//	cout << "===================" << endl;
+//	func3(hello);
+//
+//	cout << "===================" << endl;
+//	func4(&hello); // 인자 전달할 때 array의 주소를 입력
+//
+//	return 0;
+//}
