@@ -33,8 +33,8 @@ void struct_cpp_example() {
 	delete student1;
 }
 
-int main() {
-	struct_cpp_example();
-
-	return 0;
-}
+//int main() {
+//	struct_cpp_example();
+//
+//	return 0;
+//}
