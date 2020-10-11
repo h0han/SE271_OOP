@@ -141,6 +141,10 @@
   <ItemGroup>
     <ClCompile Include="accessor_issue.cpp" />
     <ClCompile Include="call_by_value_call_by_reference.cpp" />
+    <ClCompile Include="class_member_variable_initialization_1.cpp" />
+    <ClCompile Include="class_member_variable_initialization_2_1.cpp" />
+    <ClCompile Include="class_member_variable_initialization_2_2.cpp" />
+    <ClCompile Include="class_member_variable_initialization_3.cpp" />
     <ClCompile Include="dynamic_memory_allocation.cpp" />
     <ClCompile Include="function_overloading.cpp" />
     <ClCompile Include="function_pointer.cpp" />
