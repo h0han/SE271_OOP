@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b002994f-026b-4eb1-bd7a-7941ce3cc4b5}</ProjectGuid>
-    <RootNamespace>Practice</RootNamespace>
+    <ProjectGuid>{28964ce3-5c73-4930-bed9-151cb6675f32}</ProjectGuid>
+    <RootNamespace>Practice2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,20 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="accessor_issue.cpp" />
-    <ClCompile Include="call_by_value_call_by_reference.cpp" />
-    <ClCompile Include="class_member_variable_initialization_1.cpp" />
-    <ClCompile Include="class_member_variable_initialization_2_1.cpp" />
-    <ClCompile Include="class_member_variable_initialization_2_2.cpp" />
-    <ClCompile Include="class_member_variable_initialization_3.cpp" />
-    <ClCompile Include="constructor_overloading.cpp" />
-    <ClCompile Include="dynamic_memory_allocation.cpp" />
-    <ClCompile Include="function_overloading.cpp" />
-    <ClCompile Include="function_pointer.cpp" />
-    <ClCompile Include="multi_dimensional_array_initialization.cpp" />
-    <ClCompile Include="struct_class.cpp" />
-    <ClCompile Include="swap_operation.cpp" />
-    <ClCompile Include="passing_array_to_function.cpp" />
+    <ClCompile Include="class.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

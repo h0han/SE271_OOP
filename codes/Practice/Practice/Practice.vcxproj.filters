@@ -42,9 +42,6 @@
     <ClCompile Include="accessor_issue.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="this_pointer.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="class_member_variable_initialization_1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -55,6 +52,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="class_member_variable_initialization_3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="constructor_overloading.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

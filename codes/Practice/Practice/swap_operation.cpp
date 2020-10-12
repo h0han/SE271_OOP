@@ -24,20 +24,20 @@ int* f1() {
 	return inums;
 }
 
-//int main() {
-//	int inum1 = 1;
-//	int inum2 = 3;
-//	
-//	cout << inum1 << " " << inum2 << endl;
-//	intSwap1(inum1, inum2);
-//	cout << inum1 << " " << inum2 << endl;
-//	//intSwap2(inum1, inum2);
-//	//cout << inum1 << " " << inum2 << endl;
-//	intSwap3(inum1, inum2);
-//	cout << inum1 << " " << inum2 << endl;
-//
-//	int* pnums = f1();
-//	cout << *pnums << endl;
-//
-//	return 0;
-//}
+int main() {
+	int inum1 = 1;
+	int inum2 = 3;
+	
+	cout << inum1 << " " << inum2 << endl;
+	intSwap1(inum1, inum2);
+	cout << inum1 << " " << inum2 << endl;
+	//intSwap2(inum1, inum2);
+	//cout << inum1 << " " << inum2 << endl;
+	intSwap3(inum1, inum2);
+	cout << inum1 << " " << inum2 << endl;
+
+	int* pnums = f1();
+	cout << *pnums << endl;
+
+	return 0;
+}

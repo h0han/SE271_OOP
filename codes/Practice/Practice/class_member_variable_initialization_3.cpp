@@ -26,9 +26,9 @@ Student::~Student() {
 	}
 }
 
-int main() {
-	Student s1(201911189, "hyhan");
-	s1.getid();
-
-	return 0;
-}
+//int main() {
+//	Student s1(201911189, "hyhan");
+//	s1.getid();
+//
+//	return 0;
+//}
