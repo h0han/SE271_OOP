@@ -18,17 +18,17 @@ Node::Node() : idata(), fdata(), sdata(), type(), next() {
     Node* next = NULL;
     }
 Node::Node(int ivalue) : idata(), fdata(), sdata(), type(), next() {
-    type = 0;
+    type = 0;   // getType에서 integer type을 추론하기 위해 설정한 변수
     idata = ivalue;
     Node* next = NULL;
 }
 Node::Node(float fvalue) : idata(), fdata(), sdata(), type(), next() {
-    type = 1;
+    type = 1;   // getType에서 float type을 추론하기 위해 설정한 변수
     fdata = fvalue;
     Node* next = NULL;
 }
 Node::Node(string svalue) : idata(), fdata(), sdata(), type(), next() {
-    type = 2;
+    type = 2;   // getType에서 string type을 추론하기 위해 설정한 변수
     sdata = svalue;
     Node* next = NULL;
 }
@@ -68,7 +68,7 @@ VariableList::VariableList(const std::string* initialArray, const int size) {
 
 // Destructor
 // Note: Please delete(free) the memory you allocated 
-VariableList::~VariableList() { //소멸자가 불릴 때 전체 node 삭제?
+VariableList::~VariableList() { // 각 함수 자체적으로 메모리를 소멸하도록 하여 Destructor는 따로 구현하지 않았습니다.
     // IMPLEMENT HERE
 }
 

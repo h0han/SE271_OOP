@@ -12,7 +12,7 @@
 // Use DataType for VariableList::getType
 enum class DataType { Integer, Float, Str, NotAvailable };
 
-class Node {
+class Node {	// each note contains data region, pointing region
 public:
 	int idata;  // allocate integer data when data type is integer
 	float fdata;    // allocate float data when data type is float
@@ -91,7 +91,7 @@ private:
 	// IMPLEMENT HERE
 	Node* head;
 	Node* tail;
-	int step;
+	int step;	// for getSize
 };
 
 
