@@ -12,6 +12,25 @@
 // Use DataType for VariableList::getType
 enum class DataType { Integer, Float, Str, NotAvailable };
 
+class Node {
+public:
+	int step;   // get size
+	int idata;  // allocate integer data when data type is integer
+	float fdata;    // allocate float data when data type is float
+	std::string sdata;   //// allocate string data when data type is string
+	Node* next;
+
+	int ivalue;
+	float fvalue;
+	std::string svalue;
+	int type;
+
+	Node();
+	Node(int);
+	Node(float);
+	Node(std::string);
+};
+
 class VariableList {
 public:
 	///////////////////////////////////////////////////////////////////////////
@@ -75,9 +94,9 @@ private:
 	///////////////////////////////////////////////////////////////////////////
 
 	// IMPLEMENT HERE
-	node* head;
-	node* tail;
-	int size;
+	Node* head;
+	Node* tail;
+	int step;
 };
 
 

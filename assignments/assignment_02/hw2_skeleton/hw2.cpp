@@ -14,12 +14,42 @@ using namespace std;
 // e.g., static functions or forward declaration of functions, Then
 //
 // IMPLEMENT HERE
-struct node {   // node structure은 data region과 next region을 포함.
-    int idata; 
-    float fdata;
-    string sdata;
-    node* next;
+class Node {
+public:
+    int idata;  // allocate integer data when data type is integer
+    float fdata;    // allocate float data when data type is float
+    string sdata;   //// allocate string data when data type is string
+    Node* next;
+
+    int ivalue;
+    float fvalue;
+    string svalue;
+    int type;
+
+    Node();
+    Node(int);
+    Node(float);
+    Node(string);
+    friend VariableList;
 };
+Node::Node() {
+    Node* next = NULL;
+}
+Node::Node(int ivalue) {
+    type = 0;
+    idata = ivalue;
+    Node* next = NULL;
+}
+Node::Node(float fvalue) {
+    type = 1;
+    fdata = fvalue;
+    Node* next = NULL;
+}
+Node::Node(string svalue) {
+    type = 2;
+    sdata = svalue;
+    Node* next = NULL;
+}
 
 //
 // NOTE: DO NOT USE global, static variables
@@ -28,23 +58,28 @@ struct node {   // node structure은 data region과 next region을 포함.
 // Constructors
 VariableList::VariableList() {
     // IMPLEMENT HERE
+    step = 0;   // for getSize
+    Node node = Node();
     head = NULL;
     tail = NULL;
-    size = 0;
 }
 VariableList::VariableList(const int* initialArray, const int size) {   // array에 있는 elem의 node화 필요
-    // IMPLEMENT HERE
     int i;  // for loop
     for (i = 0; i < size; ++i) {
-
+        add(initialArray[i]);
     }
-    
 }
 VariableList::VariableList(const float* initialArray, const int size) {
-    // IMPLEMENT HERE
+    int i;  // for loop
+    for (i = 0; i < size; ++i) {
+        add(initialArray[i]);
+    }
 }
 VariableList::VariableList(const std::string* initialArray, const int size) {
-    // IMPLEMENT HERE
+    int i;  // for loop
+    for (i = 0; i < size; ++i) {
+        add(initialArray[i]);
+    }
 }
 
 // Destructor
@@ -56,142 +91,232 @@ VariableList::~VariableList() { //소멸자가 불릴 때 전체 node 삭제?
 // Member functions
 // add: Add the value at the end of the list
 void VariableList::add(const int val) {
-     //IMPLEMENT HERE
-    node* tmp = new node;
-    tmp->idata = val;
-    tmp->next = NULL;
+    Node* new_node = new Node(val);
+    new_node->idata = val;
+    new_node->next = NULL;
 
-    if (head == NULL) {
-        head = tmp;
-        tail = tmp;
+    if (step == 0) {
+        head = new_node;
+        tail = new_node;
     }
     else {
-        tail->next = tmp;
+        tail->next = new_node;
         tail = tail->next;
-    }
-    ++size;
-    delete tmp;
+    } ++step;
 }
 void VariableList::add(const float val) {
-    // IMPLEMENT HERE
-    node* tmp = new node;
-    tmp->fdata = val;
-    tmp->next = NULL;
+    Node* new_node = new Node(val);
+    new_node->fdata = val;
+    new_node->next = NULL;
 
-    if (head == NULL) {
-        head = tmp;
-        tail = tmp;
+    if (step == 0) {
+        head = new_node;
+        tail = new_node;
     }
     else {
-        tail->next = tmp;
+        tail->next = new_node;
         tail = tail->next;
-    }
-    ++size;
-    delete tmp;
+    } ++step;
 }
 void VariableList::add(const std::string& val) {
-    // IMPLEMENT HERE
-    node* tmp = new node;
-    string str(val);
-    tmp->sdata = str;
-    tmp->next = NULL;
+    Node* new_node = new Node(val);
+    new_node->sdata = val;
+    new_node->next = NULL;
 
-    if (head == NULL) {
-        head = tmp;
-        tail = tmp;
+    if (step == 0) {
+        head = new_node;
+        tail = new_node;
     }
     else {
-        tail->next = tmp;
+        tail->next = new_node;
         tail = tail->next;
-    }
-    ++size;
-    delete tmp;
+    } ++step;
 }
 
 // append: Copy all values of varList and append them at the end of the list
 void VariableList::append(const VariableList& varList) {
-    // IMPLEMENT HERE
     int list_size = varList.getSize();
-    int i;  // for loop
+    int pos;
+    Node* pos_node = new Node();
+    pos_node = head;
 
-    node* tmp = new node;
-    for (i = 0; i < list_size; ++i) {
-        
+    for (pos = 0; pos < list_size; ++pos) {
+        if (pos_node->type == 0) {
+            add(pos_node->idata);
+        }
+        else if (pos_node->type == 1) {
+            add(pos_node->fdata);
+        }
+        else if (pos_node->type == 2) {
+            add(pos_node->sdata);
+        }
+        pos_node = pos_node->next;
     }
 }
 
 // replace: replace the value at the given index in the list
 bool VariableList::replace(const int idx, const int val) {
-    // IMPLEMENT HERE
-    int step = 0;
-    if (idx < 0 | idx > size) {
+    int pos;
+    Node* pos_node = new Node();
+    pos_node = head;
+
+    if ((idx < 0) || (idx > step)) {
         return false;
     }
-    while (step == idx) {
 
+    for (pos = 0; pos < idx; ++pos) {
+        if (pos == idx) {
+            if (pos_node->type == 0) {
+                pos_node->idata = val;
+            }
+        }
+        pos_node = pos_node->next;
     }
-    return false; // CHANGE HERE
 }
 bool VariableList::replace(const int idx, const float val) {
-    // IMPLEMENT HERE
-    if (idx < 0 | idx > size) {
+    int pos;
+    Node* pos_node = new Node();
+    pos_node = head;
+
+    if ((idx < 0) || (idx > step)) {
         return false;
     }
-    return false; // CHANGE HERE
+
+    for (pos = 0; pos < idx; ++pos) {
+        if (pos == idx) {
+            if (pos_node->type == 1) {
+                pos_node->fdata = val;
+            }
+        }
+        pos_node = pos_node->next;
+    }
 }
 bool VariableList::replace(const int idx, const std::string& val) {
-    // IMPLEMENT HERE
-    if (idx < 0 | idx > size) {
+    int pos;
+    Node* pos_node = new Node();
+    pos_node = head;
+
+    if ((idx < 0) || (idx > step)) {
         return false;
     }
-    return false; // CHANGE HERE
+
+    for (pos = 0; pos < idx; ++pos) {
+        if (pos == idx) {
+            if (pos_node->type == 2) {
+                pos_node->sdata = val;
+            }
+        }
+        pos_node = pos_node->next;
+    }
 }
 
 // remove: remove the item at the given index in the list
 bool VariableList::remove(const int idx) {
-    // IMPLEMENT HERE
-    if (idx < 0 | idx > size) {
+    int pos;
+    Node* pos_node = new Node();
+    pos_node = head;
+    Node* del_node = new Node();
+
+    if ((idx < 0) || (idx > step)) {
         return false;
     }
-    return false; // CHANGE HERE
+
+    if (idx == 0) {
+        pos_node = head->next;
+        delete head;
+        head = pos_node;
+        delete pos_node;
+    }
+    for (pos = 0; pos < idx - 1; ++pos) {
+        if (pos == idx - 1) {
+            del_node = pos_node->next;
+            pos_node = pos_node->next->next;
+        }
+        pos_node = pos_node->next;
+    }
+    delete del_node;
 }
 
 // getSize: return the number of elements of the List
 unsigned int VariableList::getSize() const {
-    // IMPLEMENT HERE
-    return size; // CHANGE HERE
+    return step;
 }
 
 // getType: return the data type for the value at the given index
 DataType VariableList::getType(const int idx) const {
-    // IMPLEMENT HERE
-    if (idx < 0 | idx > size) {
-        return false;
+    int pos;
+    Node* pos_node = new Node();
+    pos_node = head;
+
+    if ((idx < 0) || (idx > step)) {
+        return DataType::NotAvailable;
     }
-    return DataType::NotAvailable; // CHANGE HERE
+
+    for (pos = 0; pos < idx; ++pos) {
+        if (pos_node->type == 0) {
+            return DataType::Integer;
+        }
+        else if (pos_node->type == 1) {
+            return DataType::Float;
+        }
+        else if (pos_node->type == 2) {
+            return DataType::Str;
+        }
+        else {
+            return DataType::NotAvailable;
+        }
+        pos_node = pos_node->next;
+    }
 }
 
 // getValue: copy the value to the variable
 bool VariableList::getValue(const int idx, int& val) const {
-    // IMPLEMENT HERE
-    if (idx < 0 | idx > size) {
+    int pos;
+    Node* pos_node = new Node();
+    pos_node = head;
+
+    if ((idx < 0) || (idx > step)) {
         return false;
     }
-    return false; // CHANGE HERE
+
+    for (pos = 0; pos < idx; ++pos) {
+        if (pos_node->type == 0) {
+            val = pos_node->idata;
+        }
+        pos_node = pos_node->next;
+    }
 }
 bool VariableList::getValue(const int idx, float& val) const {
-    // IMPLEMENT HERE
-    if (idx < 0 | idx > size) {
+    int pos;
+    Node* pos_node = new Node();
+    pos_node = head;
+
+    if ((idx < 0) || (idx > step)) {
         return false;
     }
-    return false; // CHANGE HERE
+
+    for (pos = 0; pos < idx; ++pos) {
+        if (pos_node->type == 1) {
+            val = pos_node->fdata;
+        }
+        pos_node = pos_node->next;
+    }
 }
 bool VariableList::getValue(const int idx, std::string& val) const {
-    // IMPLEMENT HERE
-    if (idx < 0 | idx > size) {
+    int pos;
+    Node* pos_node = new Node();
+    pos_node = head;
+
+    if ((idx < 0) || (idx > step)) {
         return false;
     }
-    return false; // CHANGE HERE
+
+    for (pos = 0; pos < idx; ++pos) {
+        if (pos_node->type == 2) {
+            val = pos_node->sdata;
+        }
+        pos_node = pos_node->next;
+    }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
