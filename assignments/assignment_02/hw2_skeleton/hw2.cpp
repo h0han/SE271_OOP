@@ -14,24 +14,6 @@ using namespace std;
 // e.g., static functions or forward declaration of functions, Then
 //
 // IMPLEMENT HERE
-class Node {
-public:
-    int idata;  // allocate integer data when data type is integer
-    float fdata;    // allocate float data when data type is float
-    string sdata;   //// allocate string data when data type is string
-    Node* next;
-
-    int ivalue;
-    float fvalue;
-    string svalue;
-    int type;
-
-    Node();
-    Node(int);
-    Node(float);
-    Node(string);
-    friend VariableList;
-};
 Node::Node() {
     Node* next = NULL;
 }
@@ -102,7 +84,8 @@ void VariableList::add(const int val) {
     else {
         tail->next = new_node;
         tail = tail->next;
-    } ++step;
+    }
+    ++step;
 }
 void VariableList::add(const float val) {
     Node* new_node = new Node(val);
@@ -116,7 +99,8 @@ void VariableList::add(const float val) {
     else {
         tail->next = new_node;
         tail = tail->next;
-    } ++step;
+    } 
+    ++step;
 }
 void VariableList::add(const std::string& val) {
     Node* new_node = new Node(val);
@@ -130,7 +114,8 @@ void VariableList::add(const std::string& val) {
     else {
         tail->next = new_node;
         tail = tail->next;
-    } ++step;
+    } 
+    ++step;
 }
 
 // append: Copy all values of varList and append them at the end of the list
@@ -222,19 +207,29 @@ bool VariableList::remove(const int idx) {
     }
 
     if (idx == 0) {
+        del_node = head;
         pos_node = head->next;
-        delete head;
+        delete del_node;
         head = pos_node;
-        delete pos_node;
     }
+
+    if (idx == step) {
+        for (pos = 0; pos < idx - 1; ++pos) {
+            del_node = tail;
+            tail = pos_node;
+        }
+        delete del_node;
+    }
+
     for (pos = 0; pos < idx - 1; ++pos) {
         if (pos == idx - 1) {
             del_node = pos_node->next;
             pos_node = pos_node->next->next;
         }
         pos_node = pos_node->next;
+        delete del_node;
     }
-    delete del_node;
+    step--;
 }
 
 // getSize: return the number of elements of the List
@@ -282,6 +277,7 @@ bool VariableList::getValue(const int idx, int& val) const {
     for (pos = 0; pos < idx; ++pos) {
         if (pos_node->type == 0) {
             val = pos_node->idata;
+            return true;
         }
         pos_node = pos_node->next;
     }
@@ -298,6 +294,7 @@ bool VariableList::getValue(const int idx, float& val) const {
     for (pos = 0; pos < idx; ++pos) {
         if (pos_node->type == 1) {
             val = pos_node->fdata;
+            return true;
         }
         pos_node = pos_node->next;
     }
@@ -314,6 +311,7 @@ bool VariableList::getValue(const int idx, std::string& val) const {
     for (pos = 0; pos < idx; ++pos) {
         if (pos_node->type == 2) {
             val = pos_node->sdata;
+            return true;
         }
         pos_node = pos_node->next;
     }
