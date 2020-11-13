@@ -10,7 +10,15 @@
 #define __SE271_HW3__
 
 // IMPLEMENT HERE (something if needed)
+class Node {
+public:
+	int data;
+	Node* head;
+	Node* tail;
+	Node* next;
 
+	Node(int);
+};
 //////////////////////////////////////
 // DO-NOT-TOUCH: Section Start      //
 class Ordered {
@@ -36,7 +44,8 @@ public:
 	/////////////////////////////////////
 
 	// IMPLEMENT HERE: Complete the Ordered class 
-
+	Node* head;
+	Node* tail;
 };
 
 // IMPLEMENT HERE: implement OrderedSet here using class inheritance
