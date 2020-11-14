@@ -14,11 +14,8 @@ class Node {
 public:
 	int data;
 	Node* next;
-	Node* head;
-	Node* tail;
 
 	Node();
-	Node(int);
 };
 //////////////////////////////////////
 // DO-NOT-TOUCH: Section Start      //
@@ -47,8 +44,14 @@ public:
 	// IMPLEMENT HERE: Complete the Ordered class 
 	Node* head;
 	Node* tail;
+	int pos;
+	virtual void sort();
 };
 
 // IMPLEMENT HERE: implement OrderedSet here using class inheritance
-
+class OrderedSet : public Ordered{ 
+public:
+	OrderedSet();
+	virtual ~OrderedSet();
+};
 #endif

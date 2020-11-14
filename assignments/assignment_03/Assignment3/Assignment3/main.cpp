@@ -36,8 +36,8 @@ int main()
 	testcase(&orderedList);
 
 	// Remove "//" below after implementing OrderedSet
-	//OrderedSet orderedSet;
-	//testcase(&orderedSet);
+	OrderedSet orderedSet;
+	testcase(&orderedSet);
 
 
 	return 0;
