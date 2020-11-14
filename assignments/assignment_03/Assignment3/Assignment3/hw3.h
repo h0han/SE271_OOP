@@ -13,10 +13,11 @@
 class Node {
 public:
 	int data;
+	Node* next;
 	Node* head;
 	Node* tail;
-	Node* next;
 
+	Node();
 	Node(int);
 };
 //////////////////////////////////////
