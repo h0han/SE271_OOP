@@ -21,7 +21,23 @@ Ordered::Ordered() {
 Ordered::~Ordered() {
 }
 
+Node* Ordered::find(int v) {
+    int pos;
+    Node* pos_node = head; // for represent position
+
+    for (pos = 0; pos < m_size; ++pos) {
+        if (pos_node->data <= v) {
+            if (pos_node->next->data > v) {
+                return pos_node;
+            }
+        }
+        pos_node = pos_node->next;
+    } return NULL;
+}
+
+
 void Ordered::sort() { // for sorting the datas
+    int pos;
     Node* pos_node = head; Node* _pos_node = head;// for represent position
     int i; int j; // for loop
     int tmp; int min_idx; // for sort
@@ -49,22 +65,37 @@ void Ordered::sort() { // for sorting the datas
 }
 
 void Ordered::add(int v) {
-	Node* new_node = new Node();
-	new_node->data = v;
-	new_node->next = NULL;
-    int i; int j; // for loop
-    int tmp; int max_idx;
+    Node* n = find(v);
+    Node* new_node = new Node();
+    new_node->data = v;
+    new_node->next = NULL;
 
-	if (m_size == 0) {
-        head = new_node; tail = new_node;
-	}
-	else {
-		tail->next = new_node; tail = tail->next;
-	} ++m_size;
-    sort();
+    if (n == NULL) {
+        tail->next = new_node;
+        tail = tail->next;
+    }
+    else {
+        n = new_node;
+        new_node->next = n;
+    } m_size++;
 }
 
+//void Ordered::add(int v) {
+//	Node* new_node = new Node();
+//	new_node->data = v;
+//	new_node->next = NULL;
+//
+//	if (m_size == 0) {
+//        head = new_node; tail = new_node;
+//	}
+//	else {
+//		tail->next = new_node; tail = tail->next;
+//	} ++m_size;
+//    sort();
+//}
+
 void Ordered::remove(int index) {
+    int pos;
     Node* pos_node = head;
     Node* del_node = new Node();
 
@@ -99,6 +130,7 @@ void Ordered::add(int* arr, int size) {
 }
 
 int Ordered::operator[](int index) {
+    int pos;
     Node* pos_node = head;
     if ((index < 0) || (index >= m_size)) { return std::numeric_limits<int>::min(); }
     for (pos = 0; pos < index; ++pos) {
@@ -108,6 +140,7 @@ int Ordered::operator[](int index) {
 }
 
 bool Ordered::operator>>(int v) {
+    int pos;
     Node* pos_node = head;
     for (pos = 0; pos < m_size; ++pos) {
         if (v == pos_node->data) { return true; }
@@ -116,12 +149,12 @@ bool Ordered::operator>>(int v) {
 	return false;
 }
 
-OrderedSet::OrderedSet() {
-    Node* pos_node = head;
-    for (pos = 0; pos < m_size-1; ++pos) {
-        if (pos_node->data == pos_node->next->data) { remove(pos); }
+void OrderedSet::add(int v) {
+    if (*this>>v == false) {
+        Ordered::add(v);
     }
 }
 
-OrderedSet::~OrderedSet() {
+void OrderedSet::add(int* arr, int size) {
+    Ordered::add(arr, size);
 }

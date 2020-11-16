@@ -15,6 +15,8 @@ void testcase(Ordered* o) {
 	o->add(15);
 	o->add(15);
 	o->add(25);
+	o->add(30);
+	o->add(40);
 
 	int vals[] = { 10, 20, 35, 35, 10 };
 	o->add(vals, sizeof(vals) / sizeof(int));
@@ -32,12 +34,24 @@ void testcase(Ordered* o) {
 
 int main()
 {
+	//Ordered orderedList;
+	//testcase(&orderedList);
+
 	Ordered orderedList;
-	testcase(&orderedList);
+	for (int i = 50; i >= 0; i--) {
+		orderedList.add(i);
+	}
+	for (int i = 0; i < orderedList.size(); ++i) {
+		std::cout << orderedList[i] << ", ";
+	}
+
+	std::cout << '\n';
+	std::cout << std::boolalpha << (orderedList >> 15) << '\n';
+	std::cout << std::boolalpha << (orderedList >> 501) << '\n';
 
 	// Remove "//" below after implementing OrderedSet
-	OrderedSet orderedSet;
-	testcase(&orderedSet);
+	//OrderedSet orderedSet;
+	//testcase(&orderedSet);
 
 
 	return 0;

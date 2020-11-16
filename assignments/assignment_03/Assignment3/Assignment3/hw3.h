@@ -44,14 +44,14 @@ public:
 	// IMPLEMENT HERE: Complete the Ordered class 
 	Node* head;
 	Node* tail;
-	int pos;
 	virtual void sort();
+	virtual Node* find(int v);
 };
 
 // IMPLEMENT HERE: implement OrderedSet here using class inheritance
 class OrderedSet : public Ordered{ 
 public:
-	OrderedSet();
-	virtual ~OrderedSet();
+	void add(int v);
+	void add(int* arr, int size);
 };
 #endif
