@@ -11,6 +11,7 @@
 #include "Commons.h"
 #include "Snake.h"
 #include "Fruit.h"
+#include <algorithm>
 
 namespace snake_arena {
 	// Constructor
@@ -27,35 +28,37 @@ namespace snake_arena {
 	// Your function to primarily implement
 	Direction MyPlayer::selectDirection(
 		int turn, Snake* player_snake, Snake* enemy_snake, std::vector<Fruit*> fruits) {
-		
-		int mylen = player_snake->getLength();
-		int enlen = enemy_snake->getLength();
+
+		int mylen = player_snake->getPositions().size();
+		int enlen = enemy_snake->getPositions().size();
 
 		int myhead[2] = { 0, }; int mytail[2] = { 0, };
 		int enhead[2] = { 0, }; int entail[2] = { 0, };
 
 		int trace[15][15] = { 0, };
-		for (int i; mylen; ++i) {
+		std::vector<Pos> positions = player_snake->getPositions();
+		for (int i = 0; i < mylen; ++i) {
 			trace[player_snake->getPositions()[i].y][player_snake->getPositions()[i].x] = 1;
 			if (i == 0) {
-				myhead[0] = player_snake->getPositions()[i].x;
-				myhead[1] = player_snake->getPositions()[i].y;
+				myhead[0] = positions[i].x;
+				myhead[1] = positions[i].y;
 			}
 			if (i == mylen) {
-				mytail[0] = player_snake->getPositions()[i].x;
-				mytail[1] = player_snake->getPositions()[i].y;
+				mytail[0] = positions[i].x;
+				mytail[1] = positions[i].y;
 			}
 		}
 
-		for (int i; enlen; ++i) {	// Store the opponent's body position
+		std::vector<Pos> en_positions = enemy_snake->getPositions();
+		for (int i = 0; i < enlen; ++i) {	// Store the opponent's body position
 			trace[enemy_snake->getPositions()[i].y][enemy_snake->getPositions()[i].x] = 2;
 			if (i == 0) {
-				enhead[0] = player_snake->getPositions()[i].x;
-				enhead[1] = player_snake->getPositions()[i].y;
+				enhead[0] = en_positions[i].x;
+				enhead[1] = en_positions[i].y;
 			}
 			if (i == enlen) {
-				entail[0] = player_snake->getPositions()[i].x;
-				entail[1] = player_snake->getPositions()[i].y;
+				entail[0] = en_positions[i].x;
+				entail[1] = en_positions[i].y;
 			}
 		}
 
@@ -97,215 +100,133 @@ namespace snake_arena {
 		// Priority 2 : Shortest route to fruit
 		// 과일 - 적의 거리, 과일 - 나의 거리 비교 // 적과 과일이 더 가까우면 
 
+		// store fruit coordinates
+		int fruit1_pos[2] = { 0, }; int fruit2_pos[2] = { 0, };
+		fruit1_pos[0] = fruits[0]->getPositions()[0].x; fruit1_pos[1] = fruits[0]->getPositions()[0].y;
+		fruit2_pos[0] = fruits[1]->getPositions()[0].x; fruit2_pos[1] = fruits[1]->getPositions()[0].y;
 
+		// Calculate the distance between the head and fruit
+		double dist1 = sqrt(pow((fruit1_pos[0] - myhead[0]), 2) + pow((fruit1_pos[1]) - myhead[1], 2));
+		double dist2 = sqrt(pow((fruit2_pos[0] - myhead[0]), 2) + pow((fruit2_pos[1]) - myhead[1], 2));
 
+		int fruit_path[4] = { 1, 1, 1, 1 };	// { Up, Down, Right, Left } : 1 allows; 0 does not allow
+		// If there is a wall or opponent above the head of an object's head
+		if (myhead[1] == 0 || trace[myhead[1] + 1][myhead[0]] != 0) {
+			path[0] = 0;
+		}
+		// If there is a wall or opponent under the head of an object's head
+		if (myhead[1] == 14 || trace[myhead[1] - 1][myhead[0]] != 0) {
+			path[1] = 0;
+		}
+		// If there is a wall or opponent to the right of the object's head
+		if (myhead[0] == 14 || trace[myhead[1]][myhead[0] + 1] != 0) {
+			path[2] = 0;
+		}
+		// If there is a wall or opponent to the left of the object's head
+		if (myhead[0] == 0 || trace[myhead[1]][myhead[0] - 1] != 0) {
+			path[3] = 0;
+		}
 
-		switch (turn % 4) {
-		case 0:
+		if (dist1 > dist2) {
+			// { Up, Down, Right, Left }
+			// If the fruit is above the head
+			if (fruit1_pos[1] < myhead[1]) {
+				// The fruit is on the right side of the head
+				if (fruit1_pos[0] > myhead[0]) {
+					//fruit_path[1] = 0;
+					fruit_path[3] = 0;
+				}
+				// If the fruit is on the left side of the head
+				if (fruit1_pos[0] < myhead[0]) {
+					//fruit_path[1] = 0;
+					fruit_path[2] = 0;
+				}
+				if (fruit1_pos[0] == myhead[0]) {
+					fruit_path[0] = 3; // Weighted Upward Movement
+					//fruit_path[1] = 0;
+				}
+			}
+			// If the fruit is below the head
+			if (fruit1_pos[1] > myhead[1]) {
+				// The fruit is on the right side of the head
+				if (fruit1_pos[0] > myhead[0]) {
+					fruit_path[0] = 0;
+					fruit_path[3] = 0;
+				}
+				// If the fruit is on the left side of the head
+				if (fruit1_pos[0] < myhead[0]) {
+					fruit_path[0] = 0;
+					fruit_path[2] = 0;
+				}
+				if (fruit1_pos[0] == myhead[0]) {
+					//fruit_path[1] = 3; // Weighted to move downward
+					fruit_path[0] = 0;
+				}
+			}
+		}
+		// 거리 같은 경우 포함해야함
+
+		if (dist1 < dist2) {
+			// { Up, Down, Right, Left }
+			// If the fruit is above the head
+			if (fruit2_pos[1] < myhead[1]) {
+				// The fruit is on the right side of the head
+				if (fruit2_pos[0] > myhead[0]) {
+					fruit_path[1] = 0;
+					fruit_path[3] = 0;
+				}
+				// If the fruit is on the left side of the head
+				if (fruit2_pos[0] < myhead[0]) {
+					fruit_path[1] = 0;
+					fruit_path[2] = 0;
+				}
+				if (fruit2_pos[0] == myhead[0]) {
+					fruit_path[0] = 3; // Weighted Upward Movement
+					//fruit_path[0] = 0;
+				}
+			}
+			// If the fruit is below the head
+			if (fruit2_pos[1] > myhead[1]) {
+				// The fruit is on the right side of the head
+				if (fruit2_pos[0] > myhead[0]) {
+					//fruit_path[0] = 0;
+					fruit_path[3] = 0;
+				}
+				// If the fruit is on the left side of the head
+				if (fruit2_pos[0] < myhead[0]) {
+					//fruit_path[0] = 0;
+					fruit_path[2] = 0;
+				}
+				if (fruit2_pos[0] == myhead[0]) {
+					fruit_path[1] = 3; // Weighted to move downward
+					//fruit_path[0] = 0;
+				}
+			}
+		}
+
+		int dir[4] = { 0, };
+		for (int i = 0; i < 4; ++i) {
+			dir[i] = path[i] * fruit_path[i];
+		}
+
+		int max = 0; int idx = 0;
+		for (int i = 0; i < 4; ++i) {
+			if (max < dir[i]) {
+				idx = i;
+			}
+		}
+
+		if (idx == 0) {
 			return DrtN();
-		case 1:
-			return DrtW();
-		case 2:
+		}
+		if (idx == 1) {
 			return DrtS();
 		}
-		return DrtE(); // when case 3
-
+		if (idx == 2) {
+			return DrtE();
+		}
+		if (idx == 3) {
+			return DrtW();
+		}
 	}
 }
-
-//namespace snake_arena {
-//	// Constructor
-//	MyPlayer::MyPlayer(int map_size) :
-//		Player(map_size) {
-//		int mapsize = map_size;
-//	}
-//
-//	// Destructor
-//	MyPlayer::~MyPlayer() {
-//
-//	}
-//
-//	// Your function to primarily implement
-//	Direction MyPlayer::selectDirection(int turn, Snake* player_snake, Snake* enemy_snake, std::vector<Fruit*> fruits) {
-//
-//		int player_len = player_snake->getLength();
-//		Pos player_head = player_snake->getPositions()[0];
-//		int p_tail[2];
-//
-//		int idx_count = 0;
-//		int map[15][15]{ {0}, {0}, {0}, {0}, {0}, {0}, {0}, {0}, {0}, {0}, {0}, {0}, {0}, {0}, {0} };		// 2차원 배열 형태의 map
-//		for (Pos player_pos : player_snake->getPositions()) {		// Player: 1
-//			idx_count++;
-//			map[player_pos.y][player_pos.x] = 1;
-//			if (idx_count == player_len) {
-//				p_tail[0] = player_pos.x;
-//				p_tail[1] = player_pos.y;
-//			}
-//		}
-//		for (Pos enemy_pos : enemy_snake->getPositions()) {			// Enemy: 2
-//			map[enemy_pos.y][enemy_pos.x] = 2;
-//		}
-//		/*for (int i = 0; i < 2; i++) {
-//			for (Pos fruit_pos : fruits[i]->getPositions()) {		// Fruits: 3
-//				map[fruit_pos.y][fruit_pos.x] = 3;
-//			}
-//		}*/
-//
-//		int p_x = player_head.x;
-//		int p_y = player_head.y;
-//		char p_dir;		// 직전에 이동한 방향
-//		if (player_snake->getDirection().dy == -1) {
-//			p_dir = 'U';
-//		}
-//		else if (player_snake->getDirection().dy == 1) {
-//			p_dir = 'D';
-//		}
-//		else if (player_snake->getDirection().dx == -1) {
-//			p_dir = 'L';
-//		}
-//		else if (player_snake->getDirection().dx == 1) {
-//			p_dir = 'R';
-//		}
-//
-//		int enemy_len = enemy_snake->getLength();
-//		Pos enemy_head = enemy_snake->getPositions()[0];
-//
-//		Pos fruits_pos[2];
-//		int fruit_distance[2];
-//		bool fruit_dir[2][4] = { {false, false, false, false}, {false, false, false, false} };
-//
-//		for (int i = 0; i < 2; i++) {
-//			fruits_pos[i] = fruits[i]->getPositions()[0];
-//		}
-//		int player_to_fruit[2];
-//		int enemy_to_fruit[2];
-//		for (int i = 0; i < 2; i++) {		// 각각의 fruit까지의 거리 계산
-//			player_to_fruit[i] = (fruits_pos[i].x - p_x) * (fruits_pos[i].x - p_x) + (fruits_pos[i].y - p_y) * (fruits_pos[i].y - p_y);
-//			enemy_to_fruit[i] = (fruits_pos[i].x - enemy_head.x) * (fruits_pos[i].x - enemy_head.x) + (fruits_pos[i].y - enemy_head.y) * (fruits_pos[i].y - enemy_head.y);
-//			fruit_distance[i] = player_to_fruit[i] - enemy_to_fruit[i];
-//		}
-//		for (int i = 0; i < 2; i++) {						// UP, DOWN, LEFT, RIGHT
-//			if (fruits_pos[i].x > p_x) {
-//				fruit_dir[i][3] = true;
-//			}
-//			else if (fruits_pos[i].x < p_x) {
-//				fruit_dir[i][2] = true;
-//			}
-//
-//			if (fruits_pos[i].y > p_y) {
-//				fruit_dir[i][1] = true;
-//			}
-//			else if (fruits_pos[i].y < p_y) {
-//				fruit_dir[i][0] = true;
-//			}
-//		}
-//
-//		bool dir_avail[4] = { true, true, true, true };		// UP, DOWN, LEFT, RIGHT
-//
-//		if (map[p_y][p_x + 1] != 0 || p_x == 14) {			// 기본적으로 0이 아닌 곳으로는 갈 수 없다
-//			dir_avail[3] = false;
-//		}
-//		if (map[p_y][p_x - 1] != 0 || p_x == 0) {
-//			dir_avail[2] = false;
-//		}
-//		if (map[p_y + 1][p_x] != 0 || p_y == 14) {
-//			dir_avail[1] = false;
-//		}
-//		if (map[p_y - 1][p_x] != 0 || p_y == 0) {
-//			dir_avail[0] = false;
-//		}
-//
-//
-//		// Box 안으로 들어가는 것 방지
-//		if (p_y > 0 && p_x > 0 && p_x < 14 && p_dir == 'U' && map[p_y - 1][p_x] != 0) {		// 위로 가다 막혔을 때
-//			int count = 0;
-//			for (int y = p_y - 1; y < 15; y++) {		// 오른쪽으로 못가는 경우
-//				if (map[y][p_x + 1] != 0) {
-//					count++;
-//				}
-//				if (count == 2) {
-//					dir_avail[3] = false;
-//					break;
-//				}
-//				if (map[y][p_x - 1] != 0) {
-//					if (y != p_y - 1) {
-//						break;
-//					}
-//					break;
-//				}
-//			}
-//
-//			count = 0;
-//			for (int y = p_y - 1; y < 15; y++) {		// 왼쪽으로 못가는 경우
-//				if (map[y][p_x - 1] != 0) {
-//					count++;
-//				}
-//				if (count == 2) {
-//					dir_avail[2] = false;
-//					break;
-//				}
-//				if (map[y][p_x + 1] != 0) {
-//					if (y != p_y - 1) {
-//						break;
-//					}
-//					break;
-//				}
-//			}
-//		}
-//
-//		int count = 0;
-//		int x_check_idx = 0;
-//		int y_check_idx = 0;
-//		int ex_obs_pos[2];
-//		bool change_twice = false;
-//		int cur_x;
-//		int cur_y;
-//
-//		// Can go right?
-//		//while (true) {
-//		//	cur_x = p_x + x_check_idx;
-//		//	cur_y = p_y + y_check_idx;
-//		//	if (map[cur_y][cur_x])
-//		//}
-//
-//
-//		int sorted_fidx[2] = { 0, 1 };						// 과일 idx를 가까운 순서대로 보관
-//		if ((fruit_distance[0] < 0 && fruit_distance[1] < 0 && player_to_fruit[1] < player_to_fruit[0]) || ((fruit_distance[0] > 0 || fruit_distance[1] > 0) && (fruit_distance[0] > fruit_distance[1]))) {
-//			sorted_fidx[0] = 1;
-//			sorted_fidx[1] = 0;
-//		}
-//
-//		for (int i = 0; i < 2; i++) {						// fruit 있는 방향으로 갈 수 있으면 간다
-//			int idx = sorted_fidx[i];
-//			if (fruit_dir[idx][0] == true && dir_avail[0] == true && p_dir != 'D') {
-//				return DrtN();
-//			}
-//			else if (fruit_dir[idx][1] == true && dir_avail[1] == true && p_dir != 'U') {
-//				return DrtS();
-//			}
-//			else if (fruit_dir[idx][2] == true && dir_avail[2] == true && p_dir != 'R') {
-//				return DrtW();
-//			}
-//			else if (fruit_dir[idx][3] == true && dir_avail[3] == true && p_dir != 'L') {
-//				return DrtE();
-//			}
-//		}
-//
-//		// fruit 방향으로 갈 수 없을 때
-//		if (dir_avail[0] == true && p_dir != 'D') {
-//			return DrtN();
-//		}
-//		else if (dir_avail[1] == true && p_dir != 'U') {
-//			return DrtS();
-//		}
-//		else if (dir_avail[2] == true && p_dir != 'R') {
-//			return DrtW();
-//		}
-//		else if (dir_avail[3] == true && p_dir != 'L') {
-//			return DrtE();
-//		}
-//
-//		// 갈 수 있는 방향이 없을 때 -> Game Over, 아무 방향으로 이동
-//		return DrtN();
-//	}
-//}

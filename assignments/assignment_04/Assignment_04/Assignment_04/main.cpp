@@ -93,8 +93,11 @@ void multiple_round_simultation() {
 int main(void) {
     // Select one of the function call cases below for your testing purpose
 
+    //Sample game 0
+    single_round_simultation<MyPlayer, ProfFruitTaker>();
+
     // Sample game 1
-    single_round_simultation<MyPlayer, ProfNeverDie>();
+    //single_round_simultation<MyPlayer, ProfNeverDie>();
 
     // Sample game 2
     //single_round_simultation<ProfFruitTaker, ProfNeverDie>();
