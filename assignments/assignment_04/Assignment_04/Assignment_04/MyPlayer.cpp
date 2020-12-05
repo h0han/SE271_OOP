@@ -96,6 +96,19 @@ namespace snake_arena {
 			path[3] = 0;
 		}
 
+		if (trace[myhead[1] + 1][myhead[0]] != 0) {
+			path[0] = 0;
+		}
+		if (trace[myhead[1] - 1][myhead[0]] != 0) {
+			path[1] = 0;
+		}
+		if (trace[myhead[1]][myhead[0] + 1] != 0) {
+			path[2] = 0;
+		}
+		if (trace[myhead[1]][myhead[0] - 1] != 0) {
+			path[3] = 0;
+		}
+
 
 		// Priority 2 : Shortest route to fruit
 		// 과일 - 적의 거리, 과일 - 나의 거리 비교 // 적과 과일이 더 가까우면 
@@ -110,22 +123,6 @@ namespace snake_arena {
 		double dist2 = sqrt(pow((fruit2_pos[0] - myhead[0]), 2) + pow((fruit2_pos[1]) - myhead[1], 2));
 
 		int fruit_path[4] = { 1, 1, 1, 1 };	// { Up, Down, Right, Left } : 1 allows; 0 does not allow
-		// If there is a wall or opponent above the head of an object's head
-		if (myhead[1] == 0 || trace[myhead[1] + 1][myhead[0]] != 0) {
-			path[0] = 0;
-		}
-		// If there is a wall or opponent under the head of an object's head
-		if (myhead[1] == 14 || trace[myhead[1] - 1][myhead[0]] != 0) {
-			path[1] = 0;
-		}
-		// If there is a wall or opponent to the right of the object's head
-		if (myhead[0] == 14 || trace[myhead[1]][myhead[0] + 1] != 0) {
-			path[2] = 0;
-		}
-		// If there is a wall or opponent to the left of the object's head
-		if (myhead[0] == 0 || trace[myhead[1]][myhead[0] - 1] != 0) {
-			path[3] = 0;
-		}
 
 		if (dist1 > dist2) {
 			// { Up, Down, Right, Left }
@@ -133,34 +130,65 @@ namespace snake_arena {
 			if (fruit1_pos[1] < myhead[1]) {
 				// The fruit is on the right side of the head
 				if (fruit1_pos[0] > myhead[0]) {
-					//fruit_path[1] = 0;
-					fruit_path[3] = 0;
+					fruit_path[0] += 3;
+					fruit_path[2] += 3;
 				}
 				// If the fruit is on the left side of the head
 				if (fruit1_pos[0] < myhead[0]) {
-					//fruit_path[1] = 0;
-					fruit_path[2] = 0;
+					fruit_path[0] += 3;
+					fruit_path[3] += 3;
 				}
 				if (fruit1_pos[0] == myhead[0]) {
-					fruit_path[0] = 3; // Weighted Upward Movement
-					//fruit_path[1] = 0;
+					fruit_path[0] += 6; // Weighted Upward Movement
 				}
 			}
 			// If the fruit is below the head
 			if (fruit1_pos[1] > myhead[1]) {
 				// The fruit is on the right side of the head
 				if (fruit1_pos[0] > myhead[0]) {
-					fruit_path[0] = 0;
-					fruit_path[3] = 0;
+					fruit_path[1] += 3;
+					fruit_path[2] += 3;
 				}
 				// If the fruit is on the left side of the head
 				if (fruit1_pos[0] < myhead[0]) {
-					fruit_path[0] = 0;
-					fruit_path[2] = 0;
+					fruit_path[1] += 3;
+					fruit_path[3] += 3;
 				}
 				if (fruit1_pos[0] == myhead[0]) {
-					//fruit_path[1] = 3; // Weighted to move downward
-					fruit_path[0] = 0;
+					fruit_path[1] += 6; // Weighted to move downward
+				}
+
+			}
+			// 오른쪽에 있는 경우
+			if (fruit1_pos[0] > myhead[0]) {
+				// 위쪽
+				if (fruit1_pos[1] < myhead[1]) {
+					fruit_path[0] += 3;
+					fruit_path[2] += 3;
+				}
+				// 아래쪽
+				if (fruit1_pos[1] < myhead[1]) {
+					fruit_path[1] += 3;
+					fruit_path[2] += 3;
+				}
+				if (fruit1_pos[1] == myhead[1]) {
+					fruit_path[2] += 6; // Weighted to move downward
+				}
+			}
+			// 왼쪽에 있는 경우
+			if (fruit1_pos[0] < myhead[0]) {
+				// 위쪽
+				if (fruit1_pos[1] < myhead[1]) {
+					fruit_path[0] += 3;
+					fruit_path[3] += 3;
+				}
+				// 아래쪽
+				if (fruit1_pos[1] < myhead[1]) {
+					fruit_path[1] += 3;
+					fruit_path[3] += 3;
+				}
+				if (fruit1_pos[1] == myhead[1]) {
+					fruit_path[3] += 6; // Weighted to move downward
 				}
 			}
 		}
@@ -172,34 +200,65 @@ namespace snake_arena {
 			if (fruit2_pos[1] < myhead[1]) {
 				// The fruit is on the right side of the head
 				if (fruit2_pos[0] > myhead[0]) {
-					fruit_path[1] = 0;
-					fruit_path[3] = 0;
+					fruit_path[0] += 3;
+					fruit_path[2] += 3;
 				}
 				// If the fruit is on the left side of the head
 				if (fruit2_pos[0] < myhead[0]) {
-					fruit_path[1] = 0;
-					fruit_path[2] = 0;
+					fruit_path[0] += 3;
+					fruit_path[3] += 3;
 				}
 				if (fruit2_pos[0] == myhead[0]) {
-					fruit_path[0] = 3; // Weighted Upward Movement
-					//fruit_path[0] = 0;
+					fruit_path[0] += 6; // Weighted Upward Movement
 				}
 			}
 			// If the fruit is below the head
-			if (fruit2_pos[1] > myhead[1]) {
+			if (fruit1_pos[1] > myhead[1]) {
 				// The fruit is on the right side of the head
 				if (fruit2_pos[0] > myhead[0]) {
-					//fruit_path[0] = 0;
-					fruit_path[3] = 0;
+					fruit_path[1] += 3;
+					fruit_path[2] += 3;
 				}
 				// If the fruit is on the left side of the head
 				if (fruit2_pos[0] < myhead[0]) {
-					//fruit_path[0] = 0;
-					fruit_path[2] = 0;
+					fruit_path[1] += 3;
+					fruit_path[3] += 3;
 				}
 				if (fruit2_pos[0] == myhead[0]) {
-					fruit_path[1] = 3; // Weighted to move downward
-					//fruit_path[0] = 0;
+					fruit_path[1] += 6; // Weighted to move downward
+				}
+
+			}
+			// 오른쪽에 있는 경우
+			if (fruit1_pos[0] > myhead[0]) {
+				// 위쪽
+				if (fruit2_pos[1] < myhead[1]) {
+					fruit_path[0] += 3;
+					fruit_path[2] += 3;
+				}
+				// 아래쪽
+				if (fruit2_pos[1] < myhead[1]) {
+					fruit_path[1] += 3;
+					fruit_path[2] += 3;
+				}
+				if (fruit2_pos[1] == myhead[1]) {
+					fruit_path[2] += 6; // Weighted to move downward
+				}
+			}
+			// 왼쪽에 있는 경우
+			if (fruit1_pos[0] < myhead[0]) {
+				// 위쪽
+				if (fruit2_pos[1] < myhead[1]) {
+					fruit_path[0] += 3;
+					fruit_path[3] += 3;
+				}
+				// 아래쪽
+				if (fruit2_pos[1] < myhead[1]) {
+					fruit_path[1] += 3;
+					fruit_path[3] += 3;
+				}
+				if (fruit2_pos[1] == myhead[1]) {
+					fruit_path[3] += 6; // Weighted to move downward
 				}
 			}
 		}

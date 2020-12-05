@@ -13,7 +13,7 @@
 #include <string>
 
 #define MyPlayer		Player201911189		// CHANGE THIS: Your StudentID 
-#define PLAYER_NAME		"Hello Snake :)"	// CHANGE THIS: Name your player
+#define PLAYER_NAME		"WONYUM"	// CHANGE THIS: Name your player
 
 namespace snake_arena {
 	class MyPlayer final : public Player {
