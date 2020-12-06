@@ -100,7 +100,7 @@ int main(void) {
     //single_round_simultation<MyPlayer, ProfFruitTaker>();
 
     //Sample game 0
-    single_round_simultation<MyPlayer, MyPlayer>();
+    //single_round_simultation<MyPlayer, MyPlayer>();
 
     // Sample game 1
     //single_round_simultation<MyPlayer, ProfNeverDie>();
@@ -111,8 +111,18 @@ int main(void) {
     // Sample game 2
     //single_round_simultation<ProfFruitTaker, ProfNeverDie>();
 
+
+
     // Sample game 3
     //multiple_round_simultation<MyPlayer, ProfFruitTaker>();
+
+    // Sample game 3
+    multiple_round_simultation<ProfFruitTaker, MyPlayer>();
+
+
+
+    // Sample game 3
+    //multiple_round_simultation<MyPlayer, ProfNeverDie>();
 
     // Sample game 3
     //multiple_round_simultation<MyPlayer, MyPlayer>();

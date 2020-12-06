@@ -13,7 +13,7 @@
 #include <string>
 
 #define MyPlayer		Player201911189		// CHANGE THIS: Your StudentID 
-#define PLAYER_NAME		"WONYUM"	// CHANGE THIS: Name your player
+#define PLAYER_NAME		"YNG"	// CHANGE THIS: Name your player
 
 namespace snake_arena {
 	class MyPlayer final : public Player {
@@ -27,10 +27,8 @@ namespace snake_arena {
 			std::vector<Fruit*> fruits);
 	private:
 		bool LongerThanEn(int mylen, int enlen);
-		void GoFruit1();
-		void GoFruit2();
-		int myhead[2]; int enhead[2];
-		int fruit1_pos[2]; int fruit2_pos[2];
-		int fruit_path[4];
+		void GoFruit1(int(&fruit1_pos)[2], int(&myhead)[2], int(&fruit_path)[4]);
+		void GoFruit2(int(&fruit2_pos)[2], int(&myhead)[2], int(&fruit_path)[4]);
+		void GoTail(int(&tail_pos)[2], int(&myhead)[2], int(&tail_path)[4]);
 	};
 }
