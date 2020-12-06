@@ -25,5 +25,12 @@ namespace snake_arena {
 		virtual Direction selectDirection(
 			int turn, Snake* player_snake, Snake* enemy_snake,
 			std::vector<Fruit*> fruits);
+	private:
+		bool LongerThanEn(int mylen, int enlen);
+		void GoFruit1();
+		void GoFruit2();
+		int myhead[2]; int enhead[2];
+		int fruit1_pos[2]; int fruit2_pos[2];
+		int fruit_path[4];
 	};
 }

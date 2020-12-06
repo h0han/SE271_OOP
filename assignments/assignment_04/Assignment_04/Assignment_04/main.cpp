@@ -94,16 +94,28 @@ int main(void) {
     // Select one of the function call cases below for your testing purpose
 
     //Sample game 0
-    single_round_simultation<MyPlayer, ProfFruitTaker>();
+    //single_round_simultation<ProfFruitTaker, MyPlayer>();
+
+    //Sample game 0
+    //single_round_simultation<MyPlayer, ProfFruitTaker>();
+
+    //Sample game 0
+    single_round_simultation<MyPlayer, MyPlayer>();
 
     // Sample game 1
     //single_round_simultation<MyPlayer, ProfNeverDie>();
+
+    // Sample game 1
+    //single_round_simultation<ProfNeverDie, MyPlayer>();
 
     // Sample game 2
     //single_round_simultation<ProfFruitTaker, ProfNeverDie>();
 
     // Sample game 3
     //multiple_round_simultation<MyPlayer, ProfFruitTaker>();
+
+    // Sample game 3
+    //multiple_round_simultation<MyPlayer, MyPlayer>();
 
     return 0;
 }
