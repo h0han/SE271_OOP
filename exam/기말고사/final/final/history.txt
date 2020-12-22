@@ -1,0 +1,1631 @@
+>>>>>>>>1608082613
+[[[[[ProblemA.h]]]]]
+[[[[[ProblemA.cpp]]]]]
+[[[[[ProblemB1.hpp]]]]]
+[[[[[ProblemB2.h]]]]]
+[[[[[ProblemB2.cpp]]]]]
+[[[[[ProblemC.h]]]]]
+[[[[[ProblemC.cpp]]]]]
+[[[[[ProblemD.h]]]]]
+[[[[[ProblemD.cpp]]]]]
+[[[[[ProblemD_Provided.cpp]]]]]
+>>>>>>>>1608082768
+[[[[[ProblemA.h]]]]]
+[[[[[ProblemA.cpp]]]]]
+[[[[[ProblemB1.hpp]]]]]
+[[[[[ProblemB2.h]]]]]
+[[[[[ProblemB2.cpp]]]]]
+[[[[[ProblemC.h]]]]]
+[[[[[ProblemC.cpp]]]]]
+[[[[[ProblemD.h]]]]]
+[[[[[ProblemD.cpp]]]]]
+[[[[[ProblemD_Provided.cpp]]]]]
+>>>>>>>>1608082789
+[[[[[ProblemA.h]]]]]
+[[[[[ProblemA.cpp]]]]]
+[[[[[ProblemB1.hpp]]]]]
+[[[[[ProblemB2.h]]]]]
+[[[[[ProblemB2.cpp]]]]]
+[[[[[ProblemC.h]]]]]
+[[[[[ProblemC.cpp]]]]]
+[[[[[ProblemD.h]]]]]
+[[[[[ProblemD.cpp]]]]]
+[[[[[ProblemD_Provided.cpp]]]]]
+>>>>>>>>1608082838
+[[[[[ProblemA.h]]]]]
+[[[[[ProblemA.cpp]]]]]
+[[[[[ProblemB1.hpp]]]]]
+[[[[[ProblemB2.h]]]]]
+[[[[[ProblemB2.cpp]]]]]
+[[[[[ProblemC.h]]]]]
+[[[[[ProblemC.cpp]]]]]
+[[[[[ProblemD.h]]]]]
+[[[[[ProblemD.cpp]]]]]
+[[[[[ProblemD_Provided.cpp]]]]]
+>>>>>>>>1608083095
+[[[[[ProblemA.h]]]]]
+[[[[[ProblemA.cpp]]]]]
+[[[[[ProblemB1.hpp]]]]]
+[[[[[ProblemB2.h]]]]]
+[[[[[ProblemB2.cpp]]]]]
+[[[[[ProblemC.h]]]]]
+[[[[[ProblemC.cpp]]]]]
+[[[[[ProblemD.h]]]]]
+[[[[[ProblemD.cpp]]]]]
+[[[[[ProblemD_Provided.cpp]]]]]
+>>>>>>>>1608083124
+[[[[[ProblemA.h]]]]]
+[[[[[ProblemA.cpp]]]]]
+[[[[[ProblemB1.hpp]]]]]
+[[[[[ProblemB2.h]]]]]
+[[[[[ProblemB2.cpp]]]]]
+[[[[[ProblemC.h]]]]]
+[[[[[ProblemC.cpp]]]]]
+[[[[[ProblemD.h]]]]]
+[[[[[ProblemD.cpp]]]]]
+[[[[[ProblemD_Provided.cpp]]]]]
+>>>>>>>>1608083146
+[[[[[ProblemA.h]]]]]
+[[[[[ProblemA.cpp]]]]]
+[[[[[ProblemB1.hpp]]]]]
+[[[[[ProblemB2.h]]]]]
+[[[[[ProblemB2.cpp]]]]]
+[[[[[ProblemC.h]]]]]
+[[[[[ProblemC.cpp]]]]]
+[[[[[ProblemD.h]]]]]
+[[[[[ProblemD.cpp]]]]]
+[[[[[ProblemD_Provided.cpp]]]]]
+>>>>>>>>1608083195
+[[[[[ProblemA.h]]]]]
+[[[[[ProblemA.cpp]]]]]
+[[[[[ProblemB1.hpp]]]]]
+[[[[[ProblemB2.h]]]]]
+[[[[[ProblemB2.cpp]]]]]
+[[[[[ProblemC.h]]]]]
+[[[[[ProblemC.cpp]]]]]
+[[[[[ProblemD.h]]]]]
+[[[[[ProblemD.cpp]]]]]
+[[[[[ProblemD_Provided.cpp]]]]]
+>>>>>>>>1608083223
+[[[[[ProblemA.h]]]]]
+[[[[[ProblemA.cpp]]]]]
+[[[[[ProblemB1.hpp]]]]]
+[[[[[ProblemB2.h]]]]]
+[[[[[ProblemB2.cpp]]]]]
+[[[[[ProblemC.h]]]]]
+[[[[[ProblemC.cpp]]]]]
+[[[[[ProblemD.h]]]]]
+[[[[[ProblemD.cpp]]]]]
+[[[[[ProblemD_Provided.cpp]]]]]
+>>>>>>>>1608083318
+[[[[[ProblemA.h]]]]]
+[[[[[ProblemA.cpp]]]]]
+[[[[[ProblemB1.hpp]]]]]
+[[[[[ProblemB2.h]]]]]
+[[[[[ProblemB2.cpp]]]]]
+[[[[[ProblemC.h]]]]]
+[[[[[ProblemC.cpp]]]]]
+[[[[[ProblemD.h]]]]]
+[[[[[ProblemD.cpp]]]]]
+[[[[[ProblemD_Provided.cpp]]]]]
+>>>>>>>>1608083365
+[[[[[ProblemA.h]]]]]
+[[[[[ProblemA.cpp]]]]]
+[[[[[ProblemB1.hpp]]]]]
+[[[[[ProblemB2.h]]]]]
+[[[[[ProblemB2.cpp]]]]]
+[[[[[ProblemC.h]]]]]
+[[[[[ProblemC.cpp]]]]]
+[[[[[ProblemD.h]]]]]
+[[[[[ProblemD.cpp]]]]]
+[[[[[ProblemD_Provided.cpp]]]]]
+>>>>>>>>1608083465
+[[[[[ProblemA.h]]]]]
+[[[[[ProblemA.cpp]]]]]
+[[[[[ProblemB1.hpp]]]]]
+[[[[[ProblemB2.h]]]]]
+[[[[[ProblemB2.cpp]]]]]
+[[[[[ProblemC.h]]]]]
+[[[[[ProblemC.cpp]]]]]
+[[[[[ProblemD.h]]]]]
+[[[[[ProblemD.cpp]]]]]
+[[[[[ProblemD_Provided.cpp]]]]]
+>>>>>>>>1608083631
+[[[[[ProblemA.h]]]]]
+#pragma once
+
+// Test code for your testing purpose
+void problem_A_testcode() {}
+[[[[[ProblemA.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemB1.hpp]]]]]
+#pragma once
+[[[[[ProblemB2.h]]]]]
+#pragma once
+
+// You should implement them and test it in final.cpp
+void problem_B2_i() {};
+void problem_B2_ii() {};
+void problem_B2_iii() {};
+[[[[[ProblemB2.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemC.h]]]]]
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem C: Implement parse() function
+/////////////////////////////////////////////////////////////
+
+#include <string>
+#include <vector>
+
+// Test code for your testing purpose
+void problem_C_testcode();
+[[[[[ProblemC.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemD.h]]]]]
+#pragma once
+
+// Test code for your testing purpose
+void problem_D_testcode() {};
+[[[[[ProblemD.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemD_Provided.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+>>>>>>>>1608085193
+[[[[[ProblemA.h]]]]]
+#pragma once
+
+// Test code for your testing purpose
+void problem_A_testcode() {}
+[[[[[ProblemA.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemB1.hpp]]]]]
+#pragma once
+[[[[[ProblemB2.h]]]]]
+#pragma once
+
+// You should implement them and test it in final.cpp
+void problem_B2_i() {};
+void problem_B2_ii() {};
+void problem_B2_iii() {};
+[[[[[ProblemB2.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemC.h]]]]]
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem C: Implement parse() function
+/////////////////////////////////////////////////////////////
+
+#include <string>
+#include <vector>
+
+// Test code for your testing purpose
+void problem_C_testcode();
+[[[[[ProblemC.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemD.h]]]]]
+#pragma once
+
+// Test code for your testing purpose
+void problem_D_testcode() {};
+[[[[[ProblemD.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemD_Provided.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+>>>>>>>>1608085247
+[[[[[ProblemA.h]]]]]
+#pragma once
+
+// Test code for your testing purpose
+void problem_A_testcode() {}
+[[[[[ProblemA.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemB1.hpp]]]]]
+#pragma once
+[[[[[ProblemB2.h]]]]]
+#pragma once
+
+// You should implement them and test it in final.cpp
+void problem_B2_i() {};
+void problem_B2_ii() {};
+void problem_B2_iii() {};
+[[[[[ProblemB2.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemC.h]]]]]
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem C: Implement parse() function
+/////////////////////////////////////////////////////////////
+
+#include <string>
+#include <vector>
+
+// Test code for your testing purpose
+void problem_C_testcode();
+[[[[[ProblemC.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemD.h]]]]]
+#pragma once
+
+// Test code for your testing purpose
+void problem_D_testcode() {};
+[[[[[ProblemD.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemD_Provided.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+>>>>>>>>1608086507
+[[[[[ProblemA.h]]]]]
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem A: Implement bin2uint() function
+/////////////////////////////////////////////////////////////
+
+#include <vector>
+
+// ======================================== [Problem A] =======================================
+// See ProblemA.cpp to IMPLEMENT the body of this function for Problem A
+unsigned int bin2uint(std::vector<char> str);
+
+// Test code for your testing purpose
+void problem_A_testcode();
+[[[[[ProblemA.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+#include "ProblemA.h"
+
+#include <iostream>
+
+// ======================================== [Problem A] =======================================
+// In this problem, you need to IMPLEMENT a function which converts a character vector, which includes a binary number, into an unsigned integer.
+// For example, 
+// a) If vec = {'1', '0', '0', '1'},
+// it should return 9 = (2^3*1 + 2^2*0 + 2^1*0 + 2^0*1)
+// b) If vec = {'1', '0', '0', '0', '0'},
+// it should return 16 = (2^4*1 + 2^3*0 + 2^2*0 + 2^1*0 + 2^0*0)
+
+// Important Note:
+// - Do not use any external library/functions other than the member functions of std::vector
+// - Implement everything in a single function
+// - The return value is always positive or zero (as it's an unsigned integer.)
+// - Assume that the input vec is given to meet the safe range of the unsigned integer, i.e., smaller than 2^32 - 1 (4294967295)
+// - Assume that the input vec has always correct elements, i.e., they are only either '0' or '1'.
+
+unsigned int bin2uint(std::vector<char> vec) {
+	// Implement here !
+	int ans = 0;
+	int size = vec.size();
+	for (char& a : vec) {
+		if (a == '1') {
+			int one = 1;
+			for (int i = 0; i = size - 1; ++i) {
+				one *= 2;
+				ans += one;
+			}
+		}
+		else if (a == '0') {
+			continue;
+		}
+		--size;
+	}
+	return ans;
+}
+
+//void problem_A_testcode() {
+//	// Edit this function if you want
+//	std::cout << bin2uint({'1', '0', '0', '1'}) << std::endl;
+//	std::cout << bin2uint({'1', '0', '0', '0', '0'}) << std::endl;
+//}
+[[[[[ProblemB1.hpp]]]]]
+#pragma once
+[[[[[ProblemB2.h]]]]]
+#pragma once
+
+// You should implement them and test it in final.cpp
+void problem_B2_i() {};
+void problem_B2_ii() {};
+void problem_B2_iii() {};
+[[[[[ProblemB2.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemC.h]]]]]
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem C: Implement parse() function
+/////////////////////////////////////////////////////////////
+
+#include <string>
+#include <vector>
+
+// Test code for your testing purpose
+void problem_C_testcode();
+[[[[[ProblemC.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemD.h]]]]]
+#pragma once
+
+// Test code for your testing purpose
+void problem_D_testcode() {};
+[[[[[ProblemD.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemD_Provided.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+>>>>>>>>1608086552
+[[[[[ProblemA.h]]]]]
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem A: Implement bin2uint() function
+/////////////////////////////////////////////////////////////
+
+#include <vector>
+
+// ======================================== [Problem A] =======================================
+// See ProblemA.cpp to IMPLEMENT the body of this function for Problem A
+unsigned int bin2uint(std::vector<char> str);
+
+// Test code for your testing purpose
+void problem_A_testcode();
+[[[[[ProblemA.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+#include "ProblemA.h"
+
+#include <iostream>
+
+// ======================================== [Problem A] =======================================
+// In this problem, you need to IMPLEMENT a function which converts a character vector, which includes a binary number, into an unsigned integer.
+// For example, 
+// a) If vec = {'1', '0', '0', '1'},
+// it should return 9 = (2^3*1 + 2^2*0 + 2^1*0 + 2^0*1)
+// b) If vec = {'1', '0', '0', '0', '0'},
+// it should return 16 = (2^4*1 + 2^3*0 + 2^2*0 + 2^1*0 + 2^0*0)
+
+// Important Note:
+// - Do not use any external library/functions other than the member functions of std::vector
+// - Implement everything in a single function
+// - The return value is always positive or zero (as it's an unsigned integer.)
+// - Assume that the input vec is given to meet the safe range of the unsigned integer, i.e., smaller than 2^32 - 1 (4294967295)
+// - Assume that the input vec has always correct elements, i.e., they are only either '0' or '1'.
+
+unsigned int bin2uint(std::vector<char> vec) {
+	// Implement here !
+	int ans = 0;
+	int size = vec.size();
+	for (char& a : vec) {
+		if (a == '1') {
+			int one = 1;
+			for (int i = 0; i = size - 1; ++i) {
+				one *= 2;
+				ans += one;
+			}
+		}
+		else if (a == '0') {
+			continue;
+		}
+		--size;
+	}
+	return ans;
+}
+
+//void problem_A_testcode() {
+//	// Edit this function if you want
+//	std::cout << bin2uint({'1', '0', '0', '1'}) << std::endl;
+//	std::cout << bin2uint({'1', '0', '0', '0', '0'}) << std::endl;
+//}
+[[[[[ProblemB1.hpp]]]]]
+#pragma once
+[[[[[ProblemB2.h]]]]]
+#pragma once
+
+// You should implement them and test it in final.cpp
+void problem_B2_i() {};
+void problem_B2_ii() {};
+void problem_B2_iii() {};
+[[[[[ProblemB2.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemC.h]]]]]
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem C: Implement parse() function
+/////////////////////////////////////////////////////////////
+
+#include <string>
+#include <vector>
+
+// Test code for your testing purpose
+void problem_C_testcode();
+[[[[[ProblemC.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemD.h]]]]]
+#pragma once
+
+// Test code for your testing purpose
+void problem_D_testcode() {};
+[[[[[ProblemD.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemD_Provided.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+>>>>>>>>1608086562
+[[[[[ProblemA.h]]]]]
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem A: Implement bin2uint() function
+/////////////////////////////////////////////////////////////
+
+#include <vector>
+
+// ======================================== [Problem A] =======================================
+// See ProblemA.cpp to IMPLEMENT the body of this function for Problem A
+unsigned int bin2uint(std::vector<char> str);
+
+// Test code for your testing purpose
+void problem_A_testcode();
+[[[[[ProblemA.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+#include "ProblemA.h"
+
+#include <iostream>
+
+// ======================================== [Problem A] =======================================
+// In this problem, you need to IMPLEMENT a function which converts a character vector, which includes a binary number, into an unsigned integer.
+// For example, 
+// a) If vec = {'1', '0', '0', '1'},
+// it should return 9 = (2^3*1 + 2^2*0 + 2^1*0 + 2^0*1)
+// b) If vec = {'1', '0', '0', '0', '0'},
+// it should return 16 = (2^4*1 + 2^3*0 + 2^2*0 + 2^1*0 + 2^0*0)
+
+// Important Note:
+// - Do not use any external library/functions other than the member functions of std::vector
+// - Implement everything in a single function
+// - The return value is always positive or zero (as it's an unsigned integer.)
+// - Assume that the input vec is given to meet the safe range of the unsigned integer, i.e., smaller than 2^32 - 1 (4294967295)
+// - Assume that the input vec has always correct elements, i.e., they are only either '0' or '1'.
+
+unsigned int bin2uint(std::vector<char> vec) {
+	// Implement here !
+	int ans = 0;
+	int size = vec.size();
+	for (char& a : vec) {
+		if (a == '1') {
+			int one = 1;
+			for (int i = 0; i = size - 1; ++i) {
+				one *= 2;
+				ans += one;
+			}
+		}
+		else if (a == '0') {
+			continue;
+		}
+		--size;
+	}
+	return ans;
+}
+
+//void problem_A_testcode() {
+//	// Edit this function if you want
+//	std::cout << bin2uint({'1', '0', '0', '1'}) << std::endl;
+//	std::cout << bin2uint({'1', '0', '0', '0', '0'}) << std::endl;
+//}
+[[[[[ProblemB1.hpp]]]]]
+#pragma once
+[[[[[ProblemB2.h]]]]]
+#pragma once
+
+// You should implement them and test it in final.cpp
+void problem_B2_i() {};
+void problem_B2_ii() {};
+void problem_B2_iii() {};
+[[[[[ProblemB2.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemC.h]]]]]
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem C: Implement parse() function
+/////////////////////////////////////////////////////////////
+
+#include <string>
+#include <vector>
+
+// Test code for your testing purpose
+void problem_C_testcode();
+[[[[[ProblemC.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemD.h]]]]]
+#pragma once
+
+// Test code for your testing purpose
+void problem_D_testcode() {};
+[[[[[ProblemD.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemD_Provided.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+>>>>>>>>1608086579
+[[[[[ProblemA.h]]]]]
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem A: Implement bin2uint() function
+/////////////////////////////////////////////////////////////
+
+#include <vector>
+
+// ======================================== [Problem A] =======================================
+// See ProblemA.cpp to IMPLEMENT the body of this function for Problem A
+unsigned int bin2uint(std::vector<char> str);
+
+// Test code for your testing purpose
+void problem_A_testcode();
+[[[[[ProblemA.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+#include "ProblemA.h"
+
+#include <iostream>
+
+// ======================================== [Problem A] =======================================
+// In this problem, you need to IMPLEMENT a function which converts a character vector, which includes a binary number, into an unsigned integer.
+// For example, 
+// a) If vec = {'1', '0', '0', '1'},
+// it should return 9 = (2^3*1 + 2^2*0 + 2^1*0 + 2^0*1)
+// b) If vec = {'1', '0', '0', '0', '0'},
+// it should return 16 = (2^4*1 + 2^3*0 + 2^2*0 + 2^1*0 + 2^0*0)
+
+// Important Note:
+// - Do not use any external library/functions other than the member functions of std::vector
+// - Implement everything in a single function
+// - The return value is always positive or zero (as it's an unsigned integer.)
+// - Assume that the input vec is given to meet the safe range of the unsigned integer, i.e., smaller than 2^32 - 1 (4294967295)
+// - Assume that the input vec has always correct elements, i.e., they are only either '0' or '1'.
+
+unsigned int bin2uint(std::vector<char> vec) {
+	// Implement here !
+	int ans = 0;
+	int size = vec.size();
+	for (char& a : vec) {
+		if (a == '1') {
+			int one = 1;
+			for (int i = 0; i = size - 1; ++i) {
+				one *= 2;
+				ans += one;
+			}
+		}
+		else if (a == '0') {
+			continue;
+		}
+		--size;
+	}
+	return ans;
+}
+
+//void problem_A_testcode() {
+//	// Edit this function if you want
+//	std::cout << bin2uint({'1', '0', '0', '1'}) << std::endl;
+//	std::cout << bin2uint({'1', '0', '0', '0', '0'}) << std::endl;
+//}
+[[[[[ProblemB1.hpp]]]]]
+#pragma once
+[[[[[ProblemB2.h]]]]]
+#pragma once
+
+// You should implement them and test it in final.cpp
+void problem_B2_i() {};
+void problem_B2_ii() {};
+void problem_B2_iii() {};
+[[[[[ProblemB2.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemC.h]]]]]
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem C: Implement parse() function
+/////////////////////////////////////////////////////////////
+
+#include <string>
+#include <vector>
+
+// Test code for your testing purpose
+void problem_C_testcode();
+[[[[[ProblemC.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemD.h]]]]]
+#pragma once
+
+// Test code for your testing purpose
+void problem_D_testcode() {};
+[[[[[ProblemD.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemD_Provided.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+>>>>>>>>1608086686
+[[[[[ProblemA.h]]]]]
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem A: Implement bin2uint() function
+/////////////////////////////////////////////////////////////
+
+#include <vector>
+
+// ======================================== [Problem A] =======================================
+// See ProblemA.cpp to IMPLEMENT the body of this function for Problem A
+unsigned int bin2uint(std::vector<char> str);
+
+// Test code for your testing purpose
+void problem_A_testcode();
+[[[[[ProblemA.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+#include "ProblemA.h"
+
+#include <iostream>
+
+// ======================================== [Problem A] =======================================
+// In this problem, you need to IMPLEMENT a function which converts a character vector, which includes a binary number, into an unsigned integer.
+// For example, 
+// a) If vec = {'1', '0', '0', '1'},
+// it should return 9 = (2^3*1 + 2^2*0 + 2^1*0 + 2^0*1)
+// b) If vec = {'1', '0', '0', '0', '0'},
+// it should return 16 = (2^4*1 + 2^3*0 + 2^2*0 + 2^1*0 + 2^0*0)
+
+// Important Note:
+// - Do not use any external library/functions other than the member functions of std::vector
+// - Implement everything in a single function
+// - The return value is always positive or zero (as it's an unsigned integer.)
+// - Assume that the input vec is given to meet the safe range of the unsigned integer, i.e., smaller than 2^32 - 1 (4294967295)
+// - Assume that the input vec has always correct elements, i.e., they are only either '0' or '1'.
+
+unsigned int bin2uint(std::vector<char> vec) {
+	// Implement here !
+	int ans = 0;
+	int size = vec.size();
+	for (char& a : vec) {
+		if (a == '1') {
+			int one = 1;
+			for (int i = 0; i = size - 1; ++i) {
+				one *= 2;
+				ans += one;
+			}
+		}
+		else if (a == '0') {
+			continue;
+		}
+		--size;
+	}
+	return ans;
+}
+
+//void problem_A_testcode() {
+//	// Edit this function if you want
+//	std::cout << bin2uint({'1', '0', '0', '1'}) << std::endl;
+//	std::cout << bin2uint({'1', '0', '0', '0', '0'}) << std::endl;
+//}
+[[[[[ProblemB1.hpp]]]]]
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem B1: Implement four derived classes
+/////////////////////////////////////////////////////////////
+
+template<typename T>
+class Op {
+public:
+	virtual T run(T v1, T v2) = 0;
+};
+
+// ======================================== [Problem B-1] =======================================
+// Note: Problem B consists of two steps. Once done your implementation, proceed ProblemB2.h
+
+// In this problem, you will IMPLEMENT four classes, Add, Sub, Mul, and Div by deriving the Op class above (i.e., using inheritance)
+// Hint:
+// A. You can derive a base class implemented with template by
+// "template<typename T> class CLASSNAME : public BASE_CLASSNAME<T> { ... };"
+// B. You can implement each of the four classes only with several lines. (And they are very similar each other)
+
+// 1. Add
+// Implement a class, named "Add", which performs an addition for v1 and v2 when its "run" member function is called.
+// For example, "Add<int>().run(10, 20)" returns 30
+
+
+
+
+// 2. Sub
+// Implement a class, named "Sub", which performs a subtraction for v1 and v2 when its "run" member function is called.
+// For example, "Sub<int>().run(30, 20)" returns 10
+
+
+
+// 3. Mul
+// Implement a class, named "Sub", which performs a multiplication for v1 and v2 when its "run" member function is called.
+// For example, "Sub<int>().run(10, 10)" returns 100
+
+
+
+
+// 4. Div
+// Implement a class, named "Div", which performs a division for v1 and v2 when its "run" member function is called.
+// For example, "Sub<int>().run(30, 10)" returns 3
+// At this moment, don't consider any conner case like division-by-zero
+[[[[[ProblemB2.h]]]]]
+
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem B2: Complete three functions, B2_i, B2_ii, B2_iii, as directed
+/////////////////////////////////////////////////////////////
+
+// ======================================== [Problem B-2] =======================================
+// Note 1: Problem B consists of two steps. You should first solve the problem B-1 in ProblemB1.hpp
+// Note 2: To solve the Problem B-2, go to and see ProblemB2.cpp
+#include "ProblemB1.hpp"
+
+#include <string>
+#include <exception>
+
+#define DIV_BY_ZERO "Div by Zero Error"
+
+// Implement class DivByZeroException here
+
+
+// Implement SafeDiv class here
+
+
+// Implement the create_op factory function here
+template<typename T>
+Op<T>* create_op(std::string op) {
+	return nullptr;
+}
+
+// You should implement them and test it in final.cpp
+void problem_B2_i();
+void problem_B2_ii();
+void problem_B2_iii();
+[[[[[ProblemB2.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+
+#include "ProblemB2.h"
+#include <iostream>
+
+// ======================================== [Problem B-2] =======================================
+void problem_B2() {
+	// The following source code is your starting point. You don't need to do anything with this function.
+	// Just uncomment the line below to see if it works correctly with your implementation of Problem B2.
+	// Then, proceed and solve Problem_B2_i, Problem_B2_ii, Problem_B2_iii, in order (i.e., one by one)
+	// Note: You have to build up the source code in order, i.e.,
+	// Problem_B2 -> copy/edit -> Problem_B2_i -> copy/edit -> Problem_B2_ii -> copy/edit -> Problem_B2_iii
+	/*
+
+	Op<int>* op = new Add<int>();
+	std::cout << op->run(10, 20) << std::endl;
+	std::cout << op->run(20, 30) << std::endl;
+
+	op = new Sub<int>();
+	std::cout << op->run(30, 10) << std::endl;
+
+	op = new Div<int>();
+	std::cout << op->run(10, 10) << std::endl;
+	//std::cout << op->run(10, 0) << std::endl; // Use this code to issue division-by-zero!
+
+	*/
+}
+
+void problem_B2_i() {
+	// #############################################################################################################################################
+	// PROBLEM: The source code of the previous function would have a memory leak.
+	//
+	// What you need to do is:
+	// - Copy/paste the function body of it into here and edit them using a smartpointer, either unique_ptr or shared_ptr, to eliminate all memory leaks
+	// - Do not use `delete' explicitly.
+	// #############################################################################################################################################
+
+	// Implement Here
+}
+
+
+void problem_B2_ii() {
+	// #############################################################################################################################################
+	// PROBLEM: Modify the source code of the previous function to use the factory design pattern.
+	//
+	// What you need to do is:
+	// 1. Complete the factory function, "create_op(std::string opstr)", in ProblemB2.h
+	// 2. Copy/paste the function body above into here and modify it so that it uses the factory function
+	// #############################################################################################################################################
+
+	// Implement Here
+}
+
+void problem_B2_iii() {
+	// #############################################################################################################################################
+	// PROBLEM: The source code of the previous function would have a runtime error due to division-by-zero.
+	//
+	// Do following things to handle the issue
+	// 1. Implement an execption class, "DivByZeroException" in ProblemB2.h
+	//    - You must derive std::execption class
+	//    - The "what()" member function should be implemented and return DIV_BY_ZERO defined in ProblemB2.h
+	// 2. Implement a new class, SafeDiv, in ProblemB2.h by deriving the Operator class of ProblemB1.hpp 
+	//    - This class should raise the DivByZeroExecption when v2 == 0
+	// 3. Copy/paste the function body of the previous function into here, and edit it to run it with the following outputs by handling the exception:
+	// ----------------------------- (You don't need to print "-------")
+	// 30
+	// 50
+	// 20
+	// Div by Zero Error
+	// ----------------------------- (You don't need to print "-------")
+	// #############################################################################################################################################
+
+	// Implement Here
+}
+[[[[[ProblemC.h]]]]]
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem C: Implement parse() function
+/////////////////////////////////////////////////////////////
+
+#include <string>
+#include <vector>
+
+// Test code for your testing purpose
+void problem_C_testcode();
+[[[[[ProblemC.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemD.h]]]]]
+#pragma once
+
+// Test code for your testing purpose
+void problem_D_testcode() {};
+[[[[[ProblemD.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemD_Provided.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+>>>>>>>>1608087942
+[[[[[ProblemA.h]]]]]
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem A: Implement bin2uint() function
+/////////////////////////////////////////////////////////////
+
+#include <vector>
+
+// ======================================== [Problem A] =======================================
+// See ProblemA.cpp to IMPLEMENT the body of this function for Problem A
+unsigned int bin2uint(std::vector<char> str);
+
+// Test code for your testing purpose
+void problem_A_testcode();
+[[[[[ProblemA.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+#include "ProblemA.h"
+
+#include <iostream>
+
+// ======================================== [Problem A] =======================================
+// In this problem, you need to IMPLEMENT a function which converts a character vector, which includes a binary number, into an unsigned integer.
+// For example, 
+// a) If vec = {'1', '0', '0', '1'},
+// it should return 9 = (2^3*1 + 2^2*0 + 2^1*0 + 2^0*1)
+// b) If vec = {'1', '0', '0', '0', '0'},
+// it should return 16 = (2^4*1 + 2^3*0 + 2^2*0 + 2^1*0 + 2^0*0)
+
+// Important Note:
+// - Do not use any external library/functions other than the member functions of std::vector
+// - Implement everything in a single function
+// - The return value is always positive or zero (as it's an unsigned integer.)
+// - Assume that the input vec is given to meet the safe range of the unsigned integer, i.e., smaller than 2^32 - 1 (4294967295)
+// - Assume that the input vec has always correct elements, i.e., they are only either '0' or '1'.
+
+unsigned int bin2uint(std::vector<char> vec) {
+	// Implement here !
+	int ans = 0;
+	int size = vec.size();
+	for (char& a : vec) {
+		if (a == '1') {
+			int one = 1;
+			for (int i = 0; i = size - 1; ++i) {
+				one *= 2;
+				ans += one;
+			}
+		}
+		else if (a == '0') {
+			continue;
+		}
+		--size;
+	}
+	return ans;
+}
+
+//void problem_A_testcode() {
+//	// Edit this function if you want
+//	std::cout << bin2uint({'1', '0', '0', '1'}) << std::endl;
+//	std::cout << bin2uint({'1', '0', '0', '0', '0'}) << std::endl;
+//}
+[[[[[ProblemB1.hpp]]]]]
+//#pragma once
+///////////////////////////////////////////////////////////////
+//// Object Oriented Programming - SE271 | Fall 2020 | Final //
+//// Goal of Problem B1: Implement four derived classes
+///////////////////////////////////////////////////////////////
+//
+//template<typename T>
+//class Op {
+//public:
+//	virtual T run(T v1, T v2) = 0;
+//};
+//
+//// ======================================== [Problem B-1] =======================================
+//// Note: Problem B consists of two steps. Once done your implementation, proceed ProblemB2.h
+//
+//// In this problem, you will IMPLEMENT four classes, Add, Sub, Mul, and Div by deriving the Op class above (i.e., using inheritance)
+//// Hint:
+//// A. You can derive a base class implemented with template by
+//// "template<typename T> class CLASSNAME : public BASE_CLASSNAME<T> { ... };"
+//// B. You can implement each of the four classes only with several lines. (And they are very similar each other)
+//
+//// 1. Add
+//// Implement a class, named "Add", which performs an addition for v1 and v2 when its "run" member function is called.
+//// For example, "Add<int>().run(10, 20)" returns 30
+//template<typename T> class Add : public Op<T> {
+//	Add();
+//	T run(T v1, T v2) {
+//		T add = v1 + v2;
+//		return add;
+//	}
+//};
+//
+//
+//
+//// 2. Sub
+//// Implement a class, named "Sub", which performs a subtraction for v1 and v2 when its "run" member function is called.
+//// For example, "Sub<int>().run(30, 20)" returns 10
+//template<typename T> class Sub : public Op<T> {
+//	Sub();
+//	T run(T v1, T v2) {
+//		T sub = v1 - v2;
+//		return sub;
+//	}
+//};
+//
+//
+//// 3. Mul
+//// Implement a class, named "Sub", which performs a multiplication for v1 and v2 when its "run" member function is called.
+//// For example, "Sub<int>().run(10, 10)" returns 100
+//template<typename T> class Mul : public Op<T> {
+//	Mul();
+//	T run(T v1, T v2) {
+//		T mul = v1 * v2;
+//		return add;
+//	}
+//};
+//
+//
+//
+//// 4. Div
+//// Implement a class, named "Div", which performs a division for v1 and v2 when its "run" member function is called.
+//// For example, "Sub<int>().run(30, 10)" returns 3
+//// At this moment, don't consider any conner case like division-by-zero
+//template<typename T> class Div : public Op<T> {
+//	Div();
+//	T run(T v1, T v2) {
+//		if (v2 == 0) {
+//			std::cout << "division-by-zero error" << std::endl;
+//			break;
+//		}
+//		T div = v1 + v2;
+//		return div;
+//	}
+//};
+[[[[[ProblemB2.h]]]]]
+
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem B2: Complete three functions, B2_i, B2_ii, B2_iii, as directed
+/////////////////////////////////////////////////////////////
+
+// ======================================== [Problem B-2] =======================================
+// Note 1: Problem B consists of two steps. You should first solve the problem B-1 in ProblemB1.hpp
+// Note 2: To solve the Problem B-2, go to and see ProblemB2.cpp
+/*
+#include "ProblemB1.hpp"
+
+#include <string>
+#include <exception>
+
+#define DIV_BY_ZERO "Div by Zero Error"
+
+// Implement class DivByZeroException here
+
+
+// Implement SafeDiv class here
+
+
+// Implement the create_op factory function haere
+template<typename T>
+Op<T>* create_op(std::string op) {
+	return nullptr;
+}
+
+// You should implement them and test it in final.cpp
+void problem_B2_i();
+void problem_B2_ii();
+void problem_B2_iii();
+*/
+[[[[[ProblemB2.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+
+#include "ProblemB2.h"
+#include <iostream>
+
+// ======================================== [Problem B-2] =======================================
+void problem_B2() {
+	// The following source code is your starting point. You don't need to do anything with this function.
+	// Just uncomment the line below to see if it works correctly with your implementation of Problem B2.
+	// Then, proceed and solve Problem_B2_i, Problem_B2_ii, Problem_B2_iii, in order (i.e., one by one)
+	// Note: You have to build up the source code in order, i.e.,
+	// Problem_B2 -> copy/edit -> Problem_B2_i -> copy/edit -> Problem_B2_ii -> copy/edit -> Problem_B2_iii
+
+	/*Op<int>* op = new Add<int>();*/
+	//std::cout << op->run(10, 20) << std::endl;
+	//std::cout << op->run(20, 30) << std::endl;
+
+	//op = new Sub<int>();
+	//std::cout << op->run(30, 10) << std::endl;
+
+	//op = new Div<int>();
+	//std::cout << op->run(10, 10) << std::endl;
+	//std::cout << op->run(10, 0) << std::endl; // Use this code to issue division-by-zero!
+
+
+}
+
+void problem_B2_i() {
+	// #############################################################################################################################################
+	// PROBLEM: The source code of the previous function would have a memory leak.
+	//
+	// What you need to do is:
+	// - Copy/paste the function body of it into here and edit them using a smartpointer, either unique_ptr or shared_ptr, to eliminate all memory leaks
+	// - Do not use `delete' explicitly.
+	// #############################################################################################################################################
+
+	// Implement Here
+	//std::unique_ptr<int>*op = new Add<int>();
+
+	//std::cout << op->run(10, 20) << std::endl;
+	//std::cout << op->run(20, 30) << std::endl;
+
+	//std::unique_ptr<int> op(new Sub<int>());
+	//std::cout << op->run(30, 10) << std::endl;
+
+	//std::unique_ptr<int> op(new Div<int>());
+	//std::cout << op->run(10, 10) << std::endl;
+}
+
+
+void problem_B2_ii() {
+	// #############################################################################################################################################
+	// PROBLEM: Modify the source code of the previous function to use the factory design pattern.
+	//
+	// What you need to do is:
+	// 1. Complete the factory function, "create_op(std::string opstr)", in ProblemB2.h
+	// 2. Copy/paste the function body above into here and modify it so that it uses the factory function
+	// #############################################################################################################################################
+
+	// Implement Here
+}
+
+void problem_B2_iii() {
+	// #############################################################################################################################################
+	// PROBLEM: The source code of the previous function would have a runtime error due to division-by-zero.
+	//
+	// Do following things to handle the issue
+	// 1. Implement an execption class, "DivByZeroException" in ProblemB2.h
+	//    - You must derive std::execption class
+	//    - The "what()" member function should be implemented and return DIV_BY_ZERO defined in ProblemB2.h
+	// 2. Implement a new class, SafeDiv, in ProblemB2.h by deriving the Operator class of ProblemB1.hpp 
+	//    - This class should raise the DivByZeroExecption when v2 == 0
+	// 3. Copy/paste the function body of the previous function into here, and edit it to run it with the following outputs by handling the exception:
+	// ----------------------------- (You don't need to print "-------")
+	// 30
+	// 50
+	// 20
+	// Div by Zero Error
+	// ----------------------------- (You don't need to print "-------")
+	// #############################################################################################################################################
+
+	// Implement Here
+}
+[[[[[ProblemC.h]]]]]
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem C: Implement parse() function
+/////////////////////////////////////////////////////////////
+
+#include <string>
+#include <vector>
+
+// Test code for your testing purpose
+void problem_C_testcode();
+[[[[[ProblemC.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemD.h]]]]]
+#pragma once
+
+// Test code for your testing purpose
+void problem_D_testcode() {};
+[[[[[ProblemD.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemD_Provided.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+>>>>>>>>1608089051
+[[[[[ProblemA.h]]]]]
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem A: Implement bin2uint() function
+/////////////////////////////////////////////////////////////
+
+#include <vector>
+
+// ======================================== [Problem A] =======================================
+// See ProblemA.cpp to IMPLEMENT the body of this function for Problem A
+unsigned int bin2uint(std::vector<char> str);
+
+// Test code for your testing purpose
+void problem_A_testcode();
+[[[[[ProblemA.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+#include "ProblemA.h"
+
+#include <iostream>
+
+// ======================================== [Problem A] =======================================
+// In this problem, you need to IMPLEMENT a function which converts a character vector, which includes a binary number, into an unsigned integer.
+// For example, 
+// a) If vec = {'1', '0', '0', '1'},
+// it should return 9 = (2^3*1 + 2^2*0 + 2^1*0 + 2^0*1)
+// b) If vec = {'1', '0', '0', '0', '0'},
+// it should return 16 = (2^4*1 + 2^3*0 + 2^2*0 + 2^1*0 + 2^0*0)
+
+// Important Note:
+// - Do not use any external library/functions other than the member functions of std::vector
+// - Implement everything in a single function
+// - The return value is always positive or zero (as it's an unsigned integer.)
+// - Assume that the input vec is given to meet the safe range of the unsigned integer, i.e., smaller than 2^32 - 1 (4294967295)
+// - Assume that the input vec has always correct elements, i.e., they are only either '0' or '1'.
+
+unsigned int bin2uint(std::vector<char> vec) {
+	// Implement here !
+	int ans = 0;
+	int size = vec.size();
+	for (char& a : vec) {
+		if (a == '1') {
+			int one = 1;
+			for (int i = 0; i = size - 1; ++i) {
+				one *= 2;
+				ans += one;
+			}
+		}
+		else if (a == '0') {
+			continue;
+		}
+		--size;
+	}
+	return ans;
+}
+
+//void problem_A_testcode() {
+//	// Edit this function if you want
+//	std::cout << bin2uint({'1', '0', '0', '1'}) << std::endl;
+//	std::cout << bin2uint({'1', '0', '0', '0', '0'}) << std::endl;
+//}
+[[[[[ProblemB1.hpp]]]]]
+//#pragma once
+///////////////////////////////////////////////////////////////
+//// Object Oriented Programming - SE271 | Fall 2020 | Final //
+//// Goal of Problem B1: Implement four derived classes
+///////////////////////////////////////////////////////////////
+//
+//template<typename T>
+//class Op {
+//public:
+//	virtual T run(T v1, T v2) = 0;
+//};
+//
+//// ======================================== [Problem B-1] =======================================
+//// Note: Problem B consists of two steps. Once done your implementation, proceed ProblemB2.h
+//
+//// In this problem, you will IMPLEMENT four classes, Add, Sub, Mul, and Div by deriving the Op class above (i.e., using inheritance)
+//// Hint:
+//// A. You can derive a base class implemented with template by
+//// "template<typename T> class CLASSNAME : public BASE_CLASSNAME<T> { ... };"
+//// B. You can implement each of the four classes only with several lines. (And they are very similar each other)
+//
+//// 1. Add
+//// Implement a class, named "Add", which performs an addition for v1 and v2 when its "run" member function is called.
+//// For example, "Add<int>().run(10, 20)" returns 30
+//template<typename T> class Add : public Op<T> {
+//	Add();
+//	T run(T v1, T v2) {
+//		T add = v1 + v2;
+//		return add;
+//	}
+//};
+//
+//
+//
+//// 2. Sub
+//// Implement a class, named "Sub", which performs a subtraction for v1 and v2 when its "run" member function is called.
+//// For example, "Sub<int>().run(30, 20)" returns 10
+//template<typename T> class Sub : public Op<T> {
+//	Sub();
+//	T run(T v1, T v2) {
+//		T sub = v1 - v2;
+//		return sub;
+//	}
+//};
+//
+//
+//// 3. Mul
+//// Implement a class, named "Sub", which performs a multiplication for v1 and v2 when its "run" member function is called.
+//// For example, "Sub<int>().run(10, 10)" returns 100
+//template<typename T> class Mul : public Op<T> {
+//	Mul();
+//	T run(T v1, T v2) {
+//		T mul = v1 * v2;
+//		return add;
+//	}
+//};
+//
+//
+//
+//// 4. Div
+//// Implement a class, named "Div", which performs a division for v1 and v2 when its "run" member function is called.
+//// For example, "Sub<int>().run(30, 10)" returns 3
+//// At this moment, don't consider any conner case like division-by-zero
+//template<typename T> class Div : public Op<T> {
+//	Div();
+//	T run(T v1, T v2) {
+//		if (v2 == 0) {
+//			std::cout << "division-by-zero error" << std::endl;
+//			break;
+//		}
+//		T div = v1 + v2;
+//		return div;
+//	}
+//};
+[[[[[ProblemB2.h]]]]]
+
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem B2: Complete three functions, B2_i, B2_ii, B2_iii, as directed
+/////////////////////////////////////////////////////////////
+
+// ======================================== [Problem B-2] =======================================
+// Note 1: Problem B consists of two steps. You should first solve the problem B-1 in ProblemB1.hpp
+// Note 2: To solve the Problem B-2, go to and see ProblemB2.cpp
+/*
+#include "ProblemB1.hpp"
+
+#include <string>
+#include <exception>
+
+#define DIV_BY_ZERO "Div by Zero Error"
+
+// Implement class DivByZeroException here
+
+
+// Implement SafeDiv class here
+
+
+// Implement the create_op factory function haere
+template<typename T>
+Op<T>* create_op(std::string op) {
+	return nullptr;
+}
+
+// You should implement them and test it in final.cpp
+void problem_B2_i();
+void problem_B2_ii();
+void problem_B2_iii();
+*/
+[[[[[ProblemB2.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+
+#include "ProblemB2.h"
+#include <iostream>
+
+// ======================================== [Problem B-2] =======================================
+void problem_B2() {
+	// The following source code is your starting point. You don't need to do anything with this function.
+	// Just uncomment the line below to see if it works correctly with your implementation of Problem B2.
+	// Then, proceed and solve Problem_B2_i, Problem_B2_ii, Problem_B2_iii, in order (i.e., one by one)
+	// Note: You have to build up the source code in order, i.e.,
+	// Problem_B2 -> copy/edit -> Problem_B2_i -> copy/edit -> Problem_B2_ii -> copy/edit -> Problem_B2_iii
+
+	/*Op<int>* op = new Add<int>();*/
+	//std::cout << op->run(10, 20) << std::endl;
+	//std::cout << op->run(20, 30) << std::endl;
+
+	//op = new Sub<int>();
+	//std::cout << op->run(30, 10) << std::endl;
+
+	//op = new Div<int>();
+	//std::cout << op->run(10, 10) << std::endl;
+	//std::cout << op->run(10, 0) << std::endl; // Use this code to issue division-by-zero!
+
+
+}
+
+void problem_B2_i() {
+	// #############################################################################################################################################
+	// PROBLEM: The source code of the previous function would have a memory leak.
+	//
+	// What you need to do is:
+	// - Copy/paste the function body of it into here and edit them using a smartpointer, either unique_ptr or shared_ptr, to eliminate all memory leaks
+	// - Do not use `delete' explicitly.
+	// #############################################################################################################################################
+
+	// Implement Here
+	//std::unique_ptr<int>*op = new Add<int>();
+
+	//std::cout << op->run(10, 20) << std::endl;
+	//std::cout << op->run(20, 30) << std::endl;
+
+	//std::unique_ptr<int> op(new Sub<int>());
+	//std::cout << op->run(30, 10) << std::endl;
+
+	//std::unique_ptr<int> op(new Div<int>());
+	//std::cout << op->run(10, 10) << std::endl;
+}
+
+
+void problem_B2_ii() {
+	// #############################################################################################################################################
+	// PROBLEM: Modify the source code of the previous function to use the factory design pattern.
+	//
+	// What you need to do is:
+	// 1. Complete the factory function, "create_op(std::string opstr)", in ProblemB2.h
+	// 2. Copy/paste the function body above into here and modify it so that it uses the factory function
+	// #############################################################################################################################################
+
+	// Implement Here
+}
+
+void problem_B2_iii() {
+	// #############################################################################################################################################
+	// PROBLEM: The source code of the previous function would have a runtime error due to division-by-zero.
+	//
+	// Do following things to handle the issue
+	// 1. Implement an execption class, "DivByZeroException" in ProblemB2.h
+	//    - You must derive std::execption class
+	//    - The "what()" member function should be implemented and return DIV_BY_ZERO defined in ProblemB2.h
+	// 2. Implement a new class, SafeDiv, in ProblemB2.h by deriving the Operator class of ProblemB1.hpp 
+	//    - This class should raise the DivByZeroExecption when v2 == 0
+	// 3. Copy/paste the function body of the previous function into here, and edit it to run it with the following outputs by handling the exception:
+	// ----------------------------- (You don't need to print "-------")
+	// 30
+	// 50
+	// 20
+	// Div by Zero Error
+	// ----------------------------- (You don't need to print "-------")
+	// #############################################################################################################################################
+
+	// Implement Here
+}
+[[[[[ProblemC.h]]]]]
+#pragma once
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+// Goal of Problem C: Implement parse() function
+/////////////////////////////////////////////////////////////
+
+#include <string>
+#include <vector>
+
+// IMPLEMENT the following function. See ProblemC.cpp for more details
+std::vector<std::string> parse(std::string str);
+
+// Test code for your testing purpose
+void problem_C_testcode();
+[[[[[ProblemC.cpp]]]]]
+
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+
+#include "ProblemC.h"
+
+#include <iostream>
+#include <algorithm>
+
+// ======================================== [Problem C] =======================================
+// In this problem, you need to IMPLEMENT the parse() function,
+// which takes an input string of an simple math equation and returns each `token' one by one.
+// - For example, "10-20+30*100-40" is given, the function returns a vector of strings,
+// containing {"10", "-", "20", "+", "30", "*", "100", "-", "40"}.
+// - Assume that there are only four operators, '+', '-', '*', '/', and int/float numbers in the equation.
+
+// Important!: You have to use "std::find_if".
+// - I know, we don't cover it during the class, so most of you don't know. Don't panic!
+// - It's very similar to std::find; but you can specify a comparator as its last parameter.
+// For example, you can now digest the code below based on your understading of how the STL algorithm & iterator work.
+/*
+#include <algorithm>  // std::find_if
+#include <iostream>   // std::cout
+#include <vector>     // std::vector
+
+bool IsOdd(int i) { return ((i % 2) == 1); }
+
+int main() {
+  std::vector<int> myvector;
+
+  myvector.push_back(10);
+  myvector.push_back(25);
+  myvector.push_back(40);
+  myvector.push_back(55);
+
+  std::vector<int>::iterator it =
+    std::find_if(myvector.begin(), myvector.end(), IsOdd);
+  std::cout << "The first odd number is " << *it << '\n'; // Print 25
+
+  return 0;
+}
+*/
+
+// Something useful:
+// Hint 1. std::string also has its iterator, std::string::iterator,
+//         since it is a special container for characters. So, you can use std::find_if.
+// Hint 2. Using two string iterators, you can make a substring, e.g.,
+//         std::string str = std::string("ABCD");
+//         std::cout << std::string(str.begin()+1, str.end()) << std::endl; // ==> "BCD"
+//         std::cout << std::string(str.begin()+1, str.end()-1) << std::endl; // ==> "BC"
+// Hint 3. You can use the following function for a parameter of find_if.
+
+/*
+
+static bool isOp(const char& c) {
+    // You don't need to edit it.
+    char ops[] = { '+', '-', '*', '/' };
+    for (auto o : ops) {
+        if (o == c)
+            return true;
+    }
+    return false;
+}
+
+
+std::vector<std::string> parse(std::string str) {
+    // Implement here using std::find_if
+    std::vector<std::string> ret;
+    std::vector<std::string> ch;
+    for (auto iter = str.begin(); iter != str.end(); ++iter) {
+        auto it = std::find_if(str.begin(), str.end(), isOp);
+        ch.push_back(it);
+        ret.push_back(ch);
+    }
+
+    
+    return ret;
+}
+
+void problem_C_testcode() {
+	// Edit this function for testing if you want
+    for (auto s : parse("10-20+30*100-40")) {
+        std::cout << s << std::endl;
+    }
+}
+
+
+*/
+[[[[[ProblemD.h]]]]]
+#pragma once
+
+// Test code for your testing purpose
+void problem_D_testcode() {};
+[[[[[ProblemD.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
+[[[[[ProblemD_Provided.cpp]]]]]
+/////////////////////////////////////////////////////////////
+// Object Oriented Programming - SE271 | Fall 2020 | Final //
+/////////////////////////////////////////////////////////////
